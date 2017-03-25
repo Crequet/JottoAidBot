@@ -7,3 +7,4 @@ D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.cspro
 D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.exe
 D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.pdb
 D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.mainForm.resources
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.wordfinderForm.resources

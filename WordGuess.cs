@@ -133,9 +133,21 @@ namespace JottoAidBot
         public static int TrueCount(this BooleanNode[] layer)
         {
             int count = 0;
-            for(int i = 0; i < layer.Length; i++)
+            for (int i = 0; i < layer.Length; i++)
             {
                 if (layer[i].Value == 'T')
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        public static int TrueCount(this bool[] layer)
+        {
+            int count = 0;
+            for (int i = 0; i < layer.Length; i++)
+            {
+                if (layer[i] == true)
                 {
                     count++;
                 }
@@ -146,6 +158,23 @@ namespace JottoAidBot
         public static int NotTrueCount(this BooleanNode[] layer)
         {
             return layer.Length - layer.TrueCount();
+        }
+        public static int FalseCount(this BooleanNode[] layer)
+        {
+            int count = 0;
+            for (int i = 0; i < layer.Length; i++)
+            {
+                if (layer[i].Value == 'F')
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static int NotFalseCount(this BooleanNode[] layer)
+        {
+            return layer.Length - layer.FalseCount();
         }
 
         public static bool[] GetLogicalView(string word)
@@ -212,6 +241,18 @@ namespace JottoAidBot
                     output[i] = layer1[i];
                 }
                 else
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool LayersMatch(BooleanNode[] layer1, bool[] layer2)
+        {
+            for (int i = 0; i < layer1.Length; i++)
+            {
+                if (!(layer1[i].Value == '?' || (layer1[i].Value == 'T' && layer2[i] == true) || (layer1[i].Value == 'F' && layer2[i] == false)))
                 {
                     return false;
                 }
