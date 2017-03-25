@@ -22,7 +22,7 @@ namespace JottoAidBot
         public wordfinderForm(ref List<BooleanNode[]> conditions)
         {
             InitializeComponent();
-            wordliststringviews = File.ReadAllLines(@"D:\allwords2.txt");
+            wordliststringviews = Properties.Resources.allwordsdictionarytxtfile.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
             initializewordlistlogicalviews();
             this.conditions = conditions;
         }
@@ -100,8 +100,6 @@ namespace JottoAidBot
         
         bool isvalidword(int index)
         {
-            if (wordliststringviews[index] == "cams")
-                ;
             if (noduplicatecheckbox.Checked && containsduplicate(wordliststringviews[index])) return false;
             if (minimumwordlengthcheckbox.Checked && wordliststringviews[index].Length > minimumwordlengthnumericupdown.Value) return false;
             if (maximumwordlengthcheckbox.Checked && wordliststringviews[index].Length < maximumwordlengthnumericupdown.Value) return false;
