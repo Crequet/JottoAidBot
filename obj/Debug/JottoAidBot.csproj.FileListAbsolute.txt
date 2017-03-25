@@ -1,0 +1,9 @@
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\bin\Debug\JottoAidBot.exe.config
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\bin\Debug\JottoAidBot.exe
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\bin\Debug\JottoAidBot.pdb
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.csprojResolveAssemblyReference.cache
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.Properties.Resources.resources
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.csproj.GenerateResource.Cache
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.exe
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.pdb
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Debug\JottoAidBot.mainForm.resources
