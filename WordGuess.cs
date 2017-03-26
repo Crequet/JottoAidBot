@@ -266,7 +266,7 @@ namespace JottoAidBot
         {
             for (int i = 0; i < layer1.Length; i++)
             {
-                if (!(layer1[i] == layer2[i] || layer1[i] == true))
+                if (layer1[i] && !layer2[i])
                 {
                     return false;
                 }
