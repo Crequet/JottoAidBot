@@ -15,17 +15,18 @@ namespace JottoAidBot
         int[] letteroccurencerate;
         char[] buttoncolorindicators;
         WordGuessCollection wgc;
-        List<BooleanNode[]> filteredlist;
+        public List<BooleanNode[]> filteredlist;
         wordfinderForm wordfinderform;
 
         public mainForm()
         {
             InitializeComponent();
             wgc = new WordGuessCollection();
+            wordfinderform = new wordfinderForm();
+            wordfinderform.Owner = this;
             wgc.PossibleLayerCombinationsChanged += possiblecombinationslist_Update;
             wgc.PossibleLayerCombinationsChanged += atozbuttons_Update;
             possiblecombinationslist_Update(); atozbuttons_Update();
-            wordfinderform = new wordfinderForm(ref filteredlist);
             
         }
 
@@ -78,7 +79,6 @@ namespace JottoAidBot
             wordlist.Items.Add(word + ", " + num);
             wgc.Add(new WordGuess(word, num));
             wgc.Run();
-            
         }
 
         private void removebutton_Click(object sender, EventArgs e)
@@ -101,17 +101,18 @@ namespace JottoAidBot
         private void possiblecombinationslist_Update()
         {
             if (!updatelistcheckbox.Checked) return;
-            possiblecombinationslist.BeginUpdate();
             SuspendLayout(); possiblecombinationslist.SuspendLayout();
+            possiblecombinationslist.BeginUpdate();
             possiblecombinationslist.Items.Clear();
             filteredlist = new List<BooleanNode[]>();
 
-            if (maxnotfcountcheckbox.Checked || minnottcountcheckbox.Checked)
+            if (minuniqueletterscountcheckbox.Checked || maxuniqueletterscountcheckbox.Checked)
             {
                 for (int i = 0; i < wgc.PossibleLayerCombinations.Count; i++)
                 {
-                    if (maxnotfcountcheckbox.Checked && wgc.PossibleLayerCombinations[i].NotFalseCount() > 26 - maxnotfcountnumericupdown.Value) continue;
-                    if (minnottcountcheckbox.Checked && wgc.PossibleLayerCombinations[i].NotTrueCount() < 26 - minnottcountnumericupdown.Value) continue;
+                    if (minuniqueletterscountcheckbox.Checked && wgc.PossibleLayerCombinations[i].NotFalseCount() < minuniqueletterscountnumericupdown.Value) continue;
+                    if (maxuniqueletterscountcheckbox.Checked && wgc.PossibleLayerCombinations[i].TrueCount() > maxuniqueletterscountnumericupdown.Value) continue;
+                    //if (maxuniqueletterscountcheckbox.Checked && wgc.PossibleLayerCombinations[i].NotTrueCount() < 26 - maxuniqueletterscountnumericupdown.Value) continue;
                     filteredlist.Add(wgc.PossibleLayerCombinations[i]);
                 }
             }
@@ -139,8 +140,10 @@ namespace JottoAidBot
                 }
             }
 
-            ResumeLayout(); possiblecombinationslist.ResumeLayout();
             possiblecombinationslist.EndUpdate();
+            possiblecombinationslist.ResumeLayout(); ResumeLayout(); 
+
+            if (wordfinderform.formisvisible) wordfinderform.possiblewordlist_Update();
         }
 
         private void atozbuttons_Update()
@@ -250,29 +253,29 @@ namespace JottoAidBot
             HelpButton = helpcheckbox.Checked;
         }
 
-        private void minnottormaxnotfcountnumericupdown_ValueChanged(object sender, EventArgs e)
+        private void minmaxuniqueletterscountnumericupdown_ValueChanged(object sender, EventArgs e)
         {
             possiblecombinationslist_Update(); atozbuttons_Update();
         }
 
-        private void maxnotfcountcheckbox_CheckedChanged(object sender, EventArgs e)
+        private void minuniqueletterscountcheckbox_CheckedChanged(object sender, EventArgs e)
         {
-            maxnotfcountnumericupdown.Enabled = maxnotfcountcheckbox.Checked;
+            minuniqueletterscountnumericupdown.Enabled = minuniqueletterscountcheckbox.Checked;
             possiblecombinationslist_Update(); atozbuttons_Update();
         }
 
-        private void minnottcountcheckbox_CheckedChanged(object sender, EventArgs e)
+        private void maxuniqueletterscountcheckbox_CheckedChanged(object sender, EventArgs e)
         {
-            minnottcountnumericupdown.Enabled = minnottcountcheckbox.Checked;
+            maxuniqueletterscountnumericupdown.Enabled = maxuniqueletterscountcheckbox.Checked;
             possiblecombinationslist_Update(); atozbuttons_Update();
         }
 
         private void showpossiblewordsbutton_Click(object sender, EventArgs e)
         {
-            wordfinderform.Conditions = filteredlist;
-            wordfinderform.MaximumUniqueLetterCount = minnottcountcheckbox.Checked ? (int)minnottcountnumericupdown.Value : 0;
-            wordfinderform.MinimumUniqueLetterCount = maxnotfcountcheckbox.Checked ? (int)maxnotfcountnumericupdown.Value : 0;
+            wordfinderform.formisvisible = true;
+            wordfinderform.possiblewordlist_Update();
             wordfinderform.Show();
         }
+        
     }
 }

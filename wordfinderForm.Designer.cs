@@ -28,13 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(wordfinderForm));
             this.possiblewordlist = new System.Windows.Forms.ListBox();
-            this.dosearchbutton = new System.Windows.Forms.Button();
             this.maximumwordlengthnumericupdown = new System.Windows.Forms.NumericUpDown();
             this.maximumwordlengthcheckbox = new System.Windows.Forms.CheckBox();
             this.noduplicatecheckbox = new System.Windows.Forms.CheckBox();
             this.minimumwordlengthcheckbox = new System.Windows.Forms.CheckBox();
             this.minimumwordlengthnumericupdown = new System.Windows.Forms.NumericUpDown();
+            this.letterfiltertext = new System.Windows.Forms.TextBox();
+            this.letterfiltercheckbox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.maximumwordlengthnumericupdown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimumwordlengthnumericupdown)).BeginInit();
             this.SuspendLayout();
@@ -50,24 +52,12 @@
             this.possiblewordlist.Size = new System.Drawing.Size(251, 317);
             this.possiblewordlist.TabIndex = 0;
             // 
-            // dosearchbutton
-            // 
-            this.dosearchbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dosearchbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dosearchbutton.Location = new System.Drawing.Point(12, 422);
-            this.dosearchbutton.Name = "dosearchbutton";
-            this.dosearchbutton.Size = new System.Drawing.Size(251, 25);
-            this.dosearchbutton.TabIndex = 1;
-            this.dosearchbutton.Text = "Search";
-            this.dosearchbutton.UseVisualStyleBackColor = true;
-            this.dosearchbutton.Click += new System.EventHandler(this.dosearchbutton_Click);
-            // 
             // maximumwordlengthnumericupdown
             // 
             this.maximumwordlengthnumericupdown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.maximumwordlengthnumericupdown.Enabled = false;
             this.maximumwordlengthnumericupdown.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maximumwordlengthnumericupdown.Location = new System.Drawing.Point(229, 364);
+            this.maximumwordlengthnumericupdown.Location = new System.Drawing.Point(198, 393);
             this.maximumwordlengthnumericupdown.Maximum = new decimal(new int[] {
             99,
             0,
@@ -79,7 +69,7 @@
             0,
             0});
             this.maximumwordlengthnumericupdown.Name = "maximumwordlengthnumericupdown";
-            this.maximumwordlengthnumericupdown.Size = new System.Drawing.Size(34, 23);
+            this.maximumwordlengthnumericupdown.Size = new System.Drawing.Size(65, 23);
             this.maximumwordlengthnumericupdown.TabIndex = 2;
             this.maximumwordlengthnumericupdown.Value = new decimal(new int[] {
             1,
@@ -92,11 +82,11 @@
             this.maximumwordlengthcheckbox.Appearance = System.Windows.Forms.Appearance.Button;
             this.maximumwordlengthcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.maximumwordlengthcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maximumwordlengthcheckbox.Location = new System.Drawing.Point(12, 364);
+            this.maximumwordlengthcheckbox.Location = new System.Drawing.Point(12, 393);
             this.maximumwordlengthcheckbox.Name = "maximumwordlengthcheckbox";
-            this.maximumwordlengthcheckbox.Size = new System.Drawing.Size(211, 23);
+            this.maximumwordlengthcheckbox.Size = new System.Drawing.Size(180, 23);
             this.maximumwordlengthcheckbox.TabIndex = 3;
-            this.maximumwordlengthcheckbox.Text = "Set Maximum Word Length";
+            this.maximumwordlengthcheckbox.Text = "Set Minimum Word Length";
             this.maximumwordlengthcheckbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.maximumwordlengthcheckbox.UseVisualStyleBackColor = true;
             this.maximumwordlengthcheckbox.CheckedChanged += new System.EventHandler(this.maximumwordlengthcheckbox_CheckedChanged);
@@ -121,11 +111,11 @@
             this.minimumwordlengthcheckbox.Appearance = System.Windows.Forms.Appearance.Button;
             this.minimumwordlengthcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.minimumwordlengthcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimumwordlengthcheckbox.Location = new System.Drawing.Point(12, 393);
+            this.minimumwordlengthcheckbox.Location = new System.Drawing.Point(12, 364);
             this.minimumwordlengthcheckbox.Name = "minimumwordlengthcheckbox";
-            this.minimumwordlengthcheckbox.Size = new System.Drawing.Size(211, 23);
+            this.minimumwordlengthcheckbox.Size = new System.Drawing.Size(180, 23);
             this.minimumwordlengthcheckbox.TabIndex = 3;
-            this.minimumwordlengthcheckbox.Text = "Set Minimum Word Length";
+            this.minimumwordlengthcheckbox.Text = "Set Maximum Word Length";
             this.minimumwordlengthcheckbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.minimumwordlengthcheckbox.UseVisualStyleBackColor = true;
             this.minimumwordlengthcheckbox.CheckedChanged += new System.EventHandler(this.minimumwordlengthcheckbox_CheckedChanged);
@@ -135,7 +125,7 @@
             this.minimumwordlengthnumericupdown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.minimumwordlengthnumericupdown.Enabled = false;
             this.minimumwordlengthnumericupdown.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minimumwordlengthnumericupdown.Location = new System.Drawing.Point(229, 393);
+            this.minimumwordlengthnumericupdown.Location = new System.Drawing.Point(198, 364);
             this.minimumwordlengthnumericupdown.Maximum = new decimal(new int[] {
             99,
             0,
@@ -147,7 +137,7 @@
             0,
             0});
             this.minimumwordlengthnumericupdown.Name = "minimumwordlengthnumericupdown";
-            this.minimumwordlengthnumericupdown.Size = new System.Drawing.Size(34, 23);
+            this.minimumwordlengthnumericupdown.Size = new System.Drawing.Size(65, 23);
             this.minimumwordlengthnumericupdown.TabIndex = 2;
             this.minimumwordlengthnumericupdown.Value = new decimal(new int[] {
             1,
@@ -155,24 +145,50 @@
             0,
             0});
             // 
+            // letterfiltertext
+            // 
+            this.letterfiltertext.Enabled = false;
+            this.letterfiltertext.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.letterfiltertext.Location = new System.Drawing.Point(198, 422);
+            this.letterfiltertext.Name = "letterfiltertext";
+            this.letterfiltertext.Size = new System.Drawing.Size(65, 23);
+            this.letterfiltertext.TabIndex = 4;
+            this.letterfiltertext.KeyDown += new System.Windows.Forms.KeyEventHandler(this.letterfiltertext_KeyDown);
+            // 
+            // letterfiltercheckbox
+            // 
+            this.letterfiltercheckbox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.letterfiltercheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.letterfiltercheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.letterfiltercheckbox.Location = new System.Drawing.Point(12, 422);
+            this.letterfiltercheckbox.Name = "letterfiltercheckbox";
+            this.letterfiltercheckbox.Size = new System.Drawing.Size(180, 23);
+            this.letterfiltercheckbox.TabIndex = 3;
+            this.letterfiltercheckbox.Text = "Only Show Words Containing";
+            this.letterfiltercheckbox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.letterfiltercheckbox.UseVisualStyleBackColor = true;
+            this.letterfiltercheckbox.CheckedChanged += new System.EventHandler(this.letterfiltercheckbox_CheckedChanged);
+            // 
             // wordfinderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(275, 459);
+            this.Controls.Add(this.letterfiltertext);
             this.Controls.Add(this.noduplicatecheckbox);
+            this.Controls.Add(this.letterfiltercheckbox);
             this.Controls.Add(this.minimumwordlengthcheckbox);
             this.Controls.Add(this.maximumwordlengthcheckbox);
             this.Controls.Add(this.minimumwordlengthnumericupdown);
             this.Controls.Add(this.maximumwordlengthnumericupdown);
-            this.Controls.Add(this.dosearchbutton);
             this.Controls.Add(this.possiblewordlist);
             this.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HelpButton = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "wordfinderForm";
-            this.Text = "wordfinderForm";
+            this.Text = "Possible Words";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.wordfinderForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.maximumwordlengthnumericupdown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimumwordlengthnumericupdown)).EndInit();
@@ -184,11 +200,12 @@
         #endregion
 
         private System.Windows.Forms.ListBox possiblewordlist;
-        private System.Windows.Forms.Button dosearchbutton;
         private System.Windows.Forms.NumericUpDown maximumwordlengthnumericupdown;
         private System.Windows.Forms.CheckBox maximumwordlengthcheckbox;
         private System.Windows.Forms.CheckBox noduplicatecheckbox;
         private System.Windows.Forms.CheckBox minimumwordlengthcheckbox;
         private System.Windows.Forms.NumericUpDown minimumwordlengthnumericupdown;
+        private System.Windows.Forms.TextBox letterfiltertext;
+        private System.Windows.Forms.CheckBox letterfiltercheckbox;
     }
 }

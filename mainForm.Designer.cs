@@ -119,16 +119,16 @@
             this.xlabel = new System.Windows.Forms.Label();
             this.ylabel = new System.Windows.Forms.Label();
             this.zlabel = new System.Windows.Forms.Label();
-            this.maxnotfcountcheckbox = new System.Windows.Forms.CheckBox();
-            this.maxnotfcountnumericupdown = new System.Windows.Forms.NumericUpDown();
-            this.minnottcountcheckbox = new System.Windows.Forms.CheckBox();
-            this.minnottcountnumericupdown = new System.Windows.Forms.NumericUpDown();
+            this.minuniqueletterscountcheckbox = new System.Windows.Forms.CheckBox();
+            this.minuniqueletterscountnumericupdown = new System.Windows.Forms.NumericUpDown();
+            this.maxuniqueletterscountcheckbox = new System.Windows.Forms.CheckBox();
+            this.maxuniqueletterscountnumericupdown = new System.Windows.Forms.NumericUpDown();
             this.showpossiblewordsbutton = new System.Windows.Forms.Button();
-            this.showbestguessesbutton = new System.Windows.Forms.Button();
             this.buttonspanel = new System.Windows.Forms.Panel();
+            this.uniqueletternumberlabel = new System.Windows.Forms.Label();
             this.labelspanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.maxnotfcountnumericupdown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minnottcountnumericupdown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minuniqueletterscountnumericupdown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxuniqueletterscountnumericupdown)).BeginInit();
             this.buttonspanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -1246,99 +1246,99 @@
             this.zlabel.Text = "-";
             this.zlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // maxnotfcountcheckbox
+            // minuniqueletterscountcheckbox
             // 
-            this.maxnotfcountcheckbox.Appearance = System.Windows.Forms.Appearance.Button;
-            this.maxnotfcountcheckbox.AutoSize = true;
-            this.maxnotfcountcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.maxnotfcountcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxnotfcountcheckbox.Location = new System.Drawing.Point(635, 424);
-            this.maxnotfcountcheckbox.Name = "maxnotfcountcheckbox";
-            this.maxnotfcountcheckbox.Size = new System.Drawing.Size(83, 23);
-            this.maxnotfcountcheckbox.TabIndex = 13;
-            this.maxnotfcountcheckbox.TabStop = false;
-            this.maxnotfcountcheckbox.Text = "Set Minimum";
-            this.jottotooltip.SetToolTip(this.maxnotfcountcheckbox, "Determines the availability of specifying a minimum number of unique letters");
-            this.maxnotfcountcheckbox.UseVisualStyleBackColor = true;
-            this.maxnotfcountcheckbox.CheckedChanged += new System.EventHandler(this.maxnotfcountcheckbox_CheckedChanged);
+            this.minuniqueletterscountcheckbox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.minuniqueletterscountcheckbox.AutoSize = true;
+            this.minuniqueletterscountcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minuniqueletterscountcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minuniqueletterscountcheckbox.Location = new System.Drawing.Point(951, 424);
+            this.minuniqueletterscountcheckbox.Name = "minuniqueletterscountcheckbox";
+            this.minuniqueletterscountcheckbox.Size = new System.Drawing.Size(59, 23);
+            this.minuniqueletterscountcheckbox.TabIndex = 13;
+            this.minuniqueletterscountcheckbox.TabStop = false;
+            this.minuniqueletterscountcheckbox.Text = "Set Min";
+            this.jottotooltip.SetToolTip(this.minuniqueletterscountcheckbox, "Determines the availability of specifying a minimum number of unique letters");
+            this.minuniqueletterscountcheckbox.UseVisualStyleBackColor = true;
+            this.minuniqueletterscountcheckbox.CheckedChanged += new System.EventHandler(this.minuniqueletterscountcheckbox_CheckedChanged);
             // 
-            // maxnotfcountnumericupdown
+            // minuniqueletterscountnumericupdown
             // 
-            this.maxnotfcountnumericupdown.BackColor = System.Drawing.Color.White;
-            this.maxnotfcountnumericupdown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maxnotfcountnumericupdown.Enabled = false;
-            this.maxnotfcountnumericupdown.Font = new System.Drawing.Font("Consolas", 9.75F);
-            this.maxnotfcountnumericupdown.Location = new System.Drawing.Point(723, 424);
-            this.maxnotfcountnumericupdown.Maximum = new decimal(new int[] {
+            this.minuniqueletterscountnumericupdown.BackColor = System.Drawing.Color.White;
+            this.minuniqueletterscountnumericupdown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.minuniqueletterscountnumericupdown.Enabled = false;
+            this.minuniqueletterscountnumericupdown.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.minuniqueletterscountnumericupdown.Location = new System.Drawing.Point(1016, 424);
+            this.minuniqueletterscountnumericupdown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
-            this.maxnotfcountnumericupdown.Minimum = new decimal(new int[] {
+            this.minuniqueletterscountnumericupdown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.maxnotfcountnumericupdown.Name = "maxnotfcountnumericupdown";
-            this.maxnotfcountnumericupdown.Size = new System.Drawing.Size(34, 23);
-            this.maxnotfcountnumericupdown.TabIndex = 14;
-            this.jottotooltip.SetToolTip(this.maxnotfcountnumericupdown, "Maximum length");
-            this.maxnotfcountnumericupdown.Value = new decimal(new int[] {
+            this.minuniqueletterscountnumericupdown.Name = "minuniqueletterscountnumericupdown";
+            this.minuniqueletterscountnumericupdown.Size = new System.Drawing.Size(34, 23);
+            this.minuniqueletterscountnumericupdown.TabIndex = 14;
+            this.jottotooltip.SetToolTip(this.minuniqueletterscountnumericupdown, "Maximum length");
+            this.minuniqueletterscountnumericupdown.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.maxnotfcountnumericupdown.ValueChanged += new System.EventHandler(this.minnottormaxnotfcountnumericupdown_ValueChanged);
+            this.minuniqueletterscountnumericupdown.ValueChanged += new System.EventHandler(this.minmaxuniqueletterscountnumericupdown_ValueChanged);
             // 
-            // minnottcountcheckbox
+            // maxuniqueletterscountcheckbox
             // 
-            this.minnottcountcheckbox.Appearance = System.Windows.Forms.Appearance.Button;
-            this.minnottcountcheckbox.AutoSize = true;
-            this.minnottcountcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minnottcountcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minnottcountcheckbox.Location = new System.Drawing.Point(506, 424);
-            this.minnottcountcheckbox.Name = "minnottcountcheckbox";
-            this.minnottcountcheckbox.Size = new System.Drawing.Size(83, 23);
-            this.minnottcountcheckbox.TabIndex = 13;
-            this.minnottcountcheckbox.TabStop = false;
-            this.minnottcountcheckbox.Text = "Set Maximum";
-            this.jottotooltip.SetToolTip(this.minnottcountcheckbox, "Determines the availability of specifying a maximum number of unique letters");
-            this.minnottcountcheckbox.UseVisualStyleBackColor = true;
-            this.minnottcountcheckbox.CheckedChanged += new System.EventHandler(this.minnottcountcheckbox_CheckedChanged);
+            this.maxuniqueletterscountcheckbox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.maxuniqueletterscountcheckbox.AutoSize = true;
+            this.maxuniqueletterscountcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maxuniqueletterscountcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxuniqueletterscountcheckbox.Location = new System.Drawing.Point(846, 423);
+            this.maxuniqueletterscountcheckbox.Name = "maxuniqueletterscountcheckbox";
+            this.maxuniqueletterscountcheckbox.Size = new System.Drawing.Size(59, 23);
+            this.maxuniqueletterscountcheckbox.TabIndex = 13;
+            this.maxuniqueletterscountcheckbox.TabStop = false;
+            this.maxuniqueletterscountcheckbox.Text = "Set Max";
+            this.jottotooltip.SetToolTip(this.maxuniqueletterscountcheckbox, "Determines the availability of specifying a maximum number of unique letters");
+            this.maxuniqueletterscountcheckbox.UseVisualStyleBackColor = true;
+            this.maxuniqueletterscountcheckbox.CheckedChanged += new System.EventHandler(this.maxuniqueletterscountcheckbox_CheckedChanged);
             // 
-            // minnottcountnumericupdown
+            // maxuniqueletterscountnumericupdown
             // 
-            this.minnottcountnumericupdown.BackColor = System.Drawing.Color.White;
-            this.minnottcountnumericupdown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.minnottcountnumericupdown.Enabled = false;
-            this.minnottcountnumericupdown.Font = new System.Drawing.Font("Consolas", 9.75F);
-            this.minnottcountnumericupdown.Location = new System.Drawing.Point(595, 424);
-            this.minnottcountnumericupdown.Maximum = new decimal(new int[] {
+            this.maxuniqueletterscountnumericupdown.BackColor = System.Drawing.Color.White;
+            this.maxuniqueletterscountnumericupdown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maxuniqueletterscountnumericupdown.Enabled = false;
+            this.maxuniqueletterscountnumericupdown.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.maxuniqueletterscountnumericupdown.Location = new System.Drawing.Point(911, 424);
+            this.maxuniqueletterscountnumericupdown.Maximum = new decimal(new int[] {
             26,
             0,
             0,
             0});
-            this.minnottcountnumericupdown.Minimum = new decimal(new int[] {
+            this.maxuniqueletterscountnumericupdown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.minnottcountnumericupdown.Name = "minnottcountnumericupdown";
-            this.minnottcountnumericupdown.Size = new System.Drawing.Size(34, 23);
-            this.minnottcountnumericupdown.TabIndex = 14;
-            this.jottotooltip.SetToolTip(this.minnottcountnumericupdown, "Minimum length");
-            this.minnottcountnumericupdown.Value = new decimal(new int[] {
+            this.maxuniqueletterscountnumericupdown.Name = "maxuniqueletterscountnumericupdown";
+            this.maxuniqueletterscountnumericupdown.Size = new System.Drawing.Size(34, 23);
+            this.maxuniqueletterscountnumericupdown.TabIndex = 14;
+            this.jottotooltip.SetToolTip(this.maxuniqueletterscountnumericupdown, "Minimum length");
+            this.maxuniqueletterscountnumericupdown.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.minnottcountnumericupdown.ValueChanged += new System.EventHandler(this.minnottormaxnotfcountnumericupdown_ValueChanged);
+            this.maxuniqueletterscountnumericupdown.ValueChanged += new System.EventHandler(this.minmaxuniqueletterscountnumericupdown_ValueChanged);
             // 
             // showpossiblewordsbutton
             // 
             this.showpossiblewordsbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showpossiblewordsbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showpossiblewordsbutton.Location = new System.Drawing.Point(764, 424);
+            this.showpossiblewordsbutton.Location = new System.Drawing.Point(506, 424);
             this.showpossiblewordsbutton.Name = "showpossiblewordsbutton";
             this.showpossiblewordsbutton.Size = new System.Drawing.Size(152, 23);
             this.showpossiblewordsbutton.TabIndex = 1;
@@ -1347,19 +1347,6 @@
             this.jottotooltip.SetToolTip(this.showpossiblewordsbutton, "Shows a list of possible words");
             this.showpossiblewordsbutton.UseVisualStyleBackColor = true;
             this.showpossiblewordsbutton.Click += new System.EventHandler(this.showpossiblewordsbutton_Click);
-            // 
-            // showbestguessesbutton
-            // 
-            this.showbestguessesbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.showbestguessesbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showbestguessesbutton.Location = new System.Drawing.Point(922, 424);
-            this.showbestguessesbutton.Name = "showbestguessesbutton";
-            this.showbestguessesbutton.Size = new System.Drawing.Size(128, 23);
-            this.showbestguessesbutton.TabIndex = 1;
-            this.showbestguessesbutton.TabStop = false;
-            this.showbestguessesbutton.Text = "Show Best Guesses";
-            this.jottotooltip.SetToolTip(this.showbestguessesbutton, "Shows a list of next best guesses");
-            this.showbestguessesbutton.UseVisualStyleBackColor = true;
             // 
             // buttonspanel
             // 
@@ -1397,21 +1384,32 @@
             this.buttonspanel.Size = new System.Drawing.Size(811, 30);
             this.buttonspanel.TabIndex = 7;
             // 
+            // uniqueletternumberlabel
+            // 
+            this.uniqueletternumberlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uniqueletternumberlabel.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uniqueletternumberlabel.Location = new System.Drawing.Point(702, 423);
+            this.uniqueletternumberlabel.Name = "uniqueletternumberlabel";
+            this.uniqueletternumberlabel.Size = new System.Drawing.Size(138, 23);
+            this.uniqueletternumberlabel.TabIndex = 15;
+            this.uniqueletternumberlabel.Text = "Unique Letter Number:";
+            this.uniqueletternumberlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1061, 459);
-            this.Controls.Add(this.minnottcountnumericupdown);
-            this.Controls.Add(this.maxnotfcountnumericupdown);
-            this.Controls.Add(this.minnottcountcheckbox);
-            this.Controls.Add(this.maxnotfcountcheckbox);
+            this.Controls.Add(this.uniqueletternumberlabel);
+            this.Controls.Add(this.maxuniqueletterscountnumericupdown);
+            this.Controls.Add(this.minuniqueletterscountnumericupdown);
+            this.Controls.Add(this.maxuniqueletterscountcheckbox);
+            this.Controls.Add(this.minuniqueletterscountcheckbox);
             this.Controls.Add(this.labelspanel);
             this.Controls.Add(this.buttonspanel);
             this.Controls.Add(this.updatelistcheckbox);
             this.Controls.Add(this.possiblecombinationslist);
             this.Controls.Add(this.wordlist);
-            this.Controls.Add(this.showbestguessesbutton);
             this.Controls.Add(this.showpossiblewordsbutton);
             this.Controls.Add(this.removebutton);
             this.Controls.Add(this.addbutton);
@@ -1426,8 +1424,8 @@
             this.Text = "Jotto Aid Bot";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.mainForm_HelpButtonClicked);
             this.labelspanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.maxnotfcountnumericupdown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minnottcountnumericupdown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minuniqueletterscountnumericupdown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxuniqueletterscountnumericupdown)).EndInit();
             this.buttonspanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1526,12 +1524,12 @@
         private System.Windows.Forms.Label blabel;
         private System.Windows.Forms.Label clabel;
         private System.Windows.Forms.Label olabel;
-        private System.Windows.Forms.CheckBox maxnotfcountcheckbox;
-        private System.Windows.Forms.NumericUpDown maxnotfcountnumericupdown;
-        private System.Windows.Forms.CheckBox minnottcountcheckbox;
-        private System.Windows.Forms.NumericUpDown minnottcountnumericupdown;
         private System.Windows.Forms.Button showpossiblewordsbutton;
-        private System.Windows.Forms.Button showbestguessesbutton;
+        public System.Windows.Forms.NumericUpDown maxuniqueletterscountnumericupdown;
+        public System.Windows.Forms.NumericUpDown minuniqueletterscountnumericupdown;
+        public System.Windows.Forms.CheckBox maxuniqueletterscountcheckbox;
+        public System.Windows.Forms.CheckBox minuniqueletterscountcheckbox;
+        private System.Windows.Forms.Label uniqueletternumberlabel;
     }
 }
 

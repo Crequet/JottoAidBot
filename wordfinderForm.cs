@@ -15,40 +15,20 @@ namespace JottoAidBot
     {
         string[] wordliststringviews;
         bool[][] wordlistlogicalviews;
-        List<BooleanNode[]> conditions;
-        int maxuniquelettercount;
-        int minuniquelettercount;
+        bool[] letterfilterlogicalview;
+        public bool formisvisible;
 
-        public wordfinderForm(ref List<BooleanNode[]> conditions)
+        public wordfinderForm()
         {
             InitializeComponent();
             wordliststringviews = Properties.Resources.allwordsdictionarytxtfile.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
             initializewordlistlogicalviews();
-            this.conditions = conditions;
-        }
-
-        public List<BooleanNode[]> Conditions
-        {
-            set
-            {
-                conditions = value;
-            }
-        }
-
-        public int MaximumUniqueLetterCount
-        {
-            set
-            {
-                maxuniquelettercount = value;
-            }
-        }
-        
-        public int MinimumUniqueLetterCount
-        {
-            set
-            {
-                minuniquelettercount = value;
-            }
+            noduplicatecheckbox.CheckedChanged += call_possiblewordlist_Update;
+            minimumwordlengthcheckbox.CheckedChanged += call_possiblewordlist_Update;
+            maximumwordlengthcheckbox.CheckedChanged += call_possiblewordlist_Update;
+            letterfiltercheckbox.CheckedChanged += call_possiblewordlist_Update;
+            minimumwordlengthnumericupdown.ValueChanged += call_possiblewordlist_Update;
+            maximumwordlengthnumericupdown.ValueChanged += call_possiblewordlist_Update;
         }
 
         void initializewordlistlogicalviews()
@@ -60,13 +40,23 @@ namespace JottoAidBot
                 wordlistlogicalviews[i] = LayerOperation.GetLogicalView(wordliststringviews[i]);
             }
         }
-
-        private void dosearchbutton_Click(object sender, EventArgs e)
+        public void call_possiblewordlist_Update(object sender, EventArgs e)
         {
+            possiblewordlist_Update();
+        }
+
+        public void possiblewordlist_Update()
+        {
+            string q = "";
+            foreach (char c in letterfiltertext.Text)
+            {
+                if (char.IsLetter(c)) q += char.ToLower(c);
+            }
+            letterfilterlogicalview = LayerOperation.GetLogicalView(q);
             SuspendLayout();
             possiblewordlist.BeginUpdate();
             possiblewordlist.SuspendLayout();
-            possiblewordlist.Items.Clear();   
+            possiblewordlist.Items.Clear();
             for (int i = 0; i < wordliststringviews.Length; i++)
             {
                 if (isvalidword(i))
@@ -83,7 +73,8 @@ namespace JottoAidBot
             {
                 for (int j = i + 1; j < word.Length ; j++)
                 {
-                    if (word[i] == word[j]) return true;
+                    if (word[i] == word[j])
+                        return true;
                 }
             }
             return false;
@@ -91,20 +82,22 @@ namespace JottoAidBot
 
         bool matcheswithatleastonecondition(int index)
         {
-            for (int i =0; i < conditions.Count; i++)
+            for (int i = 0; i < ((mainForm)this.Owner).filteredlist.Count; i++)
             {
-                if (LayerOperation.LayersMatch(conditions[i], wordlistlogicalviews[index])) return true;
+                if (LayerOperation.LayersMatch(((mainForm)this.Owner).filteredlist[i], wordlistlogicalviews[index]))
+                    return true;
             }
             return false;
         }
-        
+
         bool isvalidword(int index)
         {
             if (noduplicatecheckbox.Checked && containsduplicate(wordliststringviews[index])) return false;
             if (minimumwordlengthcheckbox.Checked && wordliststringviews[index].Length > minimumwordlengthnumericupdown.Value) return false;
             if (maximumwordlengthcheckbox.Checked && wordliststringviews[index].Length < maximumwordlengthnumericupdown.Value) return false;
-            if (maxuniquelettercount != 0 && wordlistlogicalviews[index].TrueCount() > maxuniquelettercount) return false;
-            if (minuniquelettercount != 0 && wordlistlogicalviews[index].TrueCount() < minuniquelettercount) return false;
+            if (((mainForm)this.Owner).maxuniqueletterscountcheckbox.Checked && wordlistlogicalviews[index].TrueCount() > ((mainForm)this.Owner).maxuniqueletterscountnumericupdown.Value) return false;
+            if (((mainForm)this.Owner).maxuniqueletterscountcheckbox.Checked && wordlistlogicalviews[index].TrueCount() < ((mainForm)this.Owner).minuniqueletterscountnumericupdown.Value) return false;
+            if (letterfiltercheckbox.Checked && !(LayerOperation.LayersMatch(letterfilterlogicalview, wordlistlogicalviews[index]))) return false;
             if (matcheswithatleastonecondition(index)) return true;
             return false;
         }
@@ -113,6 +106,7 @@ namespace JottoAidBot
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {
+                formisvisible = false;
                 this.Hide();
                 e.Cancel = true;
             }
@@ -126,6 +120,19 @@ namespace JottoAidBot
         private void minimumwordlengthcheckbox_CheckedChanged(object sender, EventArgs e)
         {
             minimumwordlengthnumericupdown.Enabled = minimumwordlengthcheckbox.Checked;
+        }
+
+        private void letterfiltercheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            letterfiltertext.Enabled = letterfiltercheckbox.Checked;
+        }
+
+        private void letterfiltertext_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                possiblewordlist_Update();
+            }
         }
     }
 }

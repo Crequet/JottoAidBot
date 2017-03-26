@@ -142,6 +142,7 @@ namespace JottoAidBot
             }
             return count;
         }
+
         public static int TrueCount(this bool[] layer)
         {
             int count = 0;
@@ -159,6 +160,7 @@ namespace JottoAidBot
         {
             return layer.Length - layer.TrueCount();
         }
+
         public static int FalseCount(this BooleanNode[] layer)
         {
             int count = 0;
@@ -253,6 +255,18 @@ namespace JottoAidBot
             for (int i = 0; i < layer1.Length; i++)
             {
                 if (!(layer1[i].Value == '?' || (layer1[i].Value == 'T' && layer2[i] == true) || (layer1[i].Value == 'F' && layer2[i] == false)))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool LayersMatch(bool[] layer1, bool[] layer2)
+        {
+            for (int i = 0; i < layer1.Length; i++)
+            {
+                if (!(layer1[i] == layer2[i] || layer1[i] == true))
                 {
                     return false;
                 }
