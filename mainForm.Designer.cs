@@ -61,37 +61,75 @@
             this.ubutton = new System.Windows.Forms.Button();
             this.zbutton = new System.Windows.Forms.Button();
             this.possiblecombinationslist = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader22 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.numbercolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.acolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.bcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ccolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ecolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.fcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.gcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.icolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.jcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.kcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.mcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ncolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ocolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.qcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.rcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.scolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ucolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.vcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.wcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.xcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ycolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.zcolumnheader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.updatelistcheckbox = new System.Windows.Forms.CheckBox();
             this.totalbutton = new System.Windows.Forms.Button();
             this.jottotooltip = new System.Windows.Forms.ToolTip(this.components);
             this.helpcheckbox = new System.Windows.Forms.CheckBox();
+            this.labelspanel = new System.Windows.Forms.Panel();
+            this.alabel = new System.Windows.Forms.Label();
+            this.blabel = new System.Windows.Forms.Label();
+            this.clabel = new System.Windows.Forms.Label();
+            this.dlabel = new System.Windows.Forms.Label();
+            this.elabel = new System.Windows.Forms.Label();
+            this.flabel = new System.Windows.Forms.Label();
+            this.glabel = new System.Windows.Forms.Label();
+            this.hlabel = new System.Windows.Forms.Label();
+            this.ilabel = new System.Windows.Forms.Label();
+            this.jlabel = new System.Windows.Forms.Label();
+            this.klabel = new System.Windows.Forms.Label();
+            this.llabel = new System.Windows.Forms.Label();
+            this.mlabel = new System.Windows.Forms.Label();
+            this.nlabel = new System.Windows.Forms.Label();
+            this.olabel = new System.Windows.Forms.Label();
+            this.plabel = new System.Windows.Forms.Label();
+            this.qlabel = new System.Windows.Forms.Label();
+            this.rlabel = new System.Windows.Forms.Label();
+            this.slabel = new System.Windows.Forms.Label();
+            this.tlabel = new System.Windows.Forms.Label();
+            this.ulabel = new System.Windows.Forms.Label();
+            this.vlabel = new System.Windows.Forms.Label();
+            this.wlabel = new System.Windows.Forms.Label();
+            this.xlabel = new System.Windows.Forms.Label();
+            this.ylabel = new System.Windows.Forms.Label();
+            this.zlabel = new System.Windows.Forms.Label();
+            this.minuniqueletterscountcheckbox = new System.Windows.Forms.CheckBox();
+            this.minuniqueletterscountnumericupdown = new System.Windows.Forms.NumericUpDown();
+            this.maxuniqueletterscountcheckbox = new System.Windows.Forms.CheckBox();
+            this.maxuniqueletterscountnumericupdown = new System.Windows.Forms.NumericUpDown();
+            this.showpossiblewordsbutton = new System.Windows.Forms.Button();
+            this.buttonspanel = new System.Windows.Forms.Panel();
+            this.uniqueletternumberlabel = new System.Windows.Forms.Label();
+            this.labelspanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minuniqueletterscountnumericupdown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxuniqueletterscountnumericupdown)).BeginInit();
+            this.buttonspanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // wordtext
@@ -101,7 +139,7 @@
             this.wordtext.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wordtext.Location = new System.Drawing.Point(12, 12);
             this.wordtext.Name = "wordtext";
-            this.wordtext.Size = new System.Drawing.Size(227, 23);
+            this.wordtext.Size = new System.Drawing.Size(179, 23);
             this.wordtext.TabIndex = 0;
             this.jottotooltip.SetToolTip(this.wordtext, "Enter a word and the number of letters it shares with the hidden word\r\nUse the fo" +
         "llowing format: cheese, 2");
@@ -111,7 +149,7 @@
             // 
             this.addbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addbutton.Location = new System.Drawing.Point(245, 12);
+            this.addbutton.Location = new System.Drawing.Point(197, 12);
             this.addbutton.Name = "addbutton";
             this.addbutton.Size = new System.Drawing.Size(35, 23);
             this.addbutton.TabIndex = 1;
@@ -126,10 +164,11 @@
             this.wordlist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wordlist.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wordlist.FormattingEnabled = true;
+            this.wordlist.HorizontalScrollbar = true;
             this.wordlist.ItemHeight = 15;
             this.wordlist.Location = new System.Drawing.Point(12, 41);
             this.wordlist.Name = "wordlist";
-            this.wordlist.Size = new System.Drawing.Size(268, 317);
+            this.wordlist.Size = new System.Drawing.Size(220, 377);
             this.wordlist.TabIndex = 2;
             this.jottotooltip.SetToolTip(this.wordlist, "Includes added words");
             // 
@@ -137,9 +176,9 @@
             // 
             this.removebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.removebutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removebutton.Location = new System.Drawing.Point(12, 366);
+            this.removebutton.Location = new System.Drawing.Point(12, 424);
             this.removebutton.Name = "removebutton";
-            this.removebutton.Size = new System.Drawing.Size(107, 23);
+            this.removebutton.Size = new System.Drawing.Size(220, 23);
             this.removebutton.TabIndex = 1;
             this.removebutton.TabStop = false;
             this.removebutton.Text = "Remove Selected";
@@ -153,7 +192,7 @@
             this.abutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.abutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.abutton.ForeColor = System.Drawing.Color.Black;
-            this.abutton.Location = new System.Drawing.Point(327, 367);
+            this.abutton.Location = new System.Drawing.Point(39, 3);
             this.abutton.Name = "abutton";
             this.abutton.Size = new System.Drawing.Size(23, 23);
             this.abutton.TabIndex = 1;
@@ -171,7 +210,7 @@
             this.bbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bbutton.ForeColor = System.Drawing.Color.Black;
-            this.bbutton.Location = new System.Drawing.Point(356, 367);
+            this.bbutton.Location = new System.Drawing.Point(68, 3);
             this.bbutton.Name = "bbutton";
             this.bbutton.Size = new System.Drawing.Size(23, 23);
             this.bbutton.TabIndex = 1;
@@ -189,7 +228,7 @@
             this.cbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbutton.ForeColor = System.Drawing.Color.Black;
-            this.cbutton.Location = new System.Drawing.Point(385, 367);
+            this.cbutton.Location = new System.Drawing.Point(97, 3);
             this.cbutton.Name = "cbutton";
             this.cbutton.Size = new System.Drawing.Size(23, 23);
             this.cbutton.TabIndex = 1;
@@ -207,7 +246,7 @@
             this.dbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbutton.ForeColor = System.Drawing.Color.Black;
-            this.dbutton.Location = new System.Drawing.Point(414, 367);
+            this.dbutton.Location = new System.Drawing.Point(126, 3);
             this.dbutton.Name = "dbutton";
             this.dbutton.Size = new System.Drawing.Size(23, 23);
             this.dbutton.TabIndex = 1;
@@ -225,7 +264,7 @@
             this.ebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ebutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ebutton.ForeColor = System.Drawing.Color.Black;
-            this.ebutton.Location = new System.Drawing.Point(443, 367);
+            this.ebutton.Location = new System.Drawing.Point(155, 3);
             this.ebutton.Name = "ebutton";
             this.ebutton.Size = new System.Drawing.Size(23, 23);
             this.ebutton.TabIndex = 1;
@@ -243,7 +282,7 @@
             this.fbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fbutton.ForeColor = System.Drawing.Color.Black;
-            this.fbutton.Location = new System.Drawing.Point(472, 367);
+            this.fbutton.Location = new System.Drawing.Point(184, 3);
             this.fbutton.Name = "fbutton";
             this.fbutton.Size = new System.Drawing.Size(23, 23);
             this.fbutton.TabIndex = 1;
@@ -261,7 +300,7 @@
             this.gbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbutton.ForeColor = System.Drawing.Color.Black;
-            this.gbutton.Location = new System.Drawing.Point(501, 367);
+            this.gbutton.Location = new System.Drawing.Point(213, 3);
             this.gbutton.Name = "gbutton";
             this.gbutton.Size = new System.Drawing.Size(23, 23);
             this.gbutton.TabIndex = 1;
@@ -279,7 +318,7 @@
             this.hbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hbutton.ForeColor = System.Drawing.Color.Black;
-            this.hbutton.Location = new System.Drawing.Point(530, 367);
+            this.hbutton.Location = new System.Drawing.Point(242, 3);
             this.hbutton.Name = "hbutton";
             this.hbutton.Size = new System.Drawing.Size(23, 23);
             this.hbutton.TabIndex = 1;
@@ -297,7 +336,7 @@
             this.ibutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibutton.ForeColor = System.Drawing.Color.Black;
-            this.ibutton.Location = new System.Drawing.Point(559, 367);
+            this.ibutton.Location = new System.Drawing.Point(271, 3);
             this.ibutton.Name = "ibutton";
             this.ibutton.Size = new System.Drawing.Size(23, 23);
             this.ibutton.TabIndex = 1;
@@ -315,7 +354,7 @@
             this.jbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.jbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jbutton.ForeColor = System.Drawing.Color.Black;
-            this.jbutton.Location = new System.Drawing.Point(588, 367);
+            this.jbutton.Location = new System.Drawing.Point(300, 3);
             this.jbutton.Name = "jbutton";
             this.jbutton.Size = new System.Drawing.Size(23, 23);
             this.jbutton.TabIndex = 1;
@@ -333,7 +372,7 @@
             this.kbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kbutton.ForeColor = System.Drawing.Color.Black;
-            this.kbutton.Location = new System.Drawing.Point(617, 367);
+            this.kbutton.Location = new System.Drawing.Point(329, 3);
             this.kbutton.Name = "kbutton";
             this.kbutton.Size = new System.Drawing.Size(23, 23);
             this.kbutton.TabIndex = 1;
@@ -351,7 +390,7 @@
             this.pbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pbutton.ForeColor = System.Drawing.Color.Black;
-            this.pbutton.Location = new System.Drawing.Point(762, 367);
+            this.pbutton.Location = new System.Drawing.Point(474, 3);
             this.pbutton.Name = "pbutton";
             this.pbutton.Size = new System.Drawing.Size(23, 23);
             this.pbutton.TabIndex = 1;
@@ -369,7 +408,7 @@
             this.lbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbutton.ForeColor = System.Drawing.Color.Black;
-            this.lbutton.Location = new System.Drawing.Point(646, 367);
+            this.lbutton.Location = new System.Drawing.Point(358, 3);
             this.lbutton.Name = "lbutton";
             this.lbutton.Size = new System.Drawing.Size(23, 23);
             this.lbutton.TabIndex = 1;
@@ -387,7 +426,7 @@
             this.qbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.qbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qbutton.ForeColor = System.Drawing.Color.Black;
-            this.qbutton.Location = new System.Drawing.Point(791, 367);
+            this.qbutton.Location = new System.Drawing.Point(503, 3);
             this.qbutton.Name = "qbutton";
             this.qbutton.Size = new System.Drawing.Size(23, 23);
             this.qbutton.TabIndex = 1;
@@ -405,7 +444,7 @@
             this.mbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.mbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mbutton.ForeColor = System.Drawing.Color.Black;
-            this.mbutton.Location = new System.Drawing.Point(675, 367);
+            this.mbutton.Location = new System.Drawing.Point(387, 3);
             this.mbutton.Name = "mbutton";
             this.mbutton.Size = new System.Drawing.Size(23, 23);
             this.mbutton.TabIndex = 1;
@@ -423,7 +462,7 @@
             this.rbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbutton.ForeColor = System.Drawing.Color.Black;
-            this.rbutton.Location = new System.Drawing.Point(820, 367);
+            this.rbutton.Location = new System.Drawing.Point(532, 3);
             this.rbutton.Name = "rbutton";
             this.rbutton.Size = new System.Drawing.Size(23, 23);
             this.rbutton.TabIndex = 1;
@@ -441,7 +480,7 @@
             this.nbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nbutton.ForeColor = System.Drawing.Color.Black;
-            this.nbutton.Location = new System.Drawing.Point(704, 367);
+            this.nbutton.Location = new System.Drawing.Point(416, 3);
             this.nbutton.Name = "nbutton";
             this.nbutton.Size = new System.Drawing.Size(23, 23);
             this.nbutton.TabIndex = 1;
@@ -459,7 +498,7 @@
             this.sbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sbutton.ForeColor = System.Drawing.Color.Black;
-            this.sbutton.Location = new System.Drawing.Point(849, 367);
+            this.sbutton.Location = new System.Drawing.Point(561, 3);
             this.sbutton.Name = "sbutton";
             this.sbutton.Size = new System.Drawing.Size(23, 23);
             this.sbutton.TabIndex = 1;
@@ -477,7 +516,7 @@
             this.obutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.obutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.obutton.ForeColor = System.Drawing.Color.Black;
-            this.obutton.Location = new System.Drawing.Point(733, 367);
+            this.obutton.Location = new System.Drawing.Point(445, 3);
             this.obutton.Name = "obutton";
             this.obutton.Size = new System.Drawing.Size(23, 23);
             this.obutton.TabIndex = 1;
@@ -495,7 +534,7 @@
             this.tbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbutton.ForeColor = System.Drawing.Color.Black;
-            this.tbutton.Location = new System.Drawing.Point(878, 367);
+            this.tbutton.Location = new System.Drawing.Point(590, 3);
             this.tbutton.Name = "tbutton";
             this.tbutton.Size = new System.Drawing.Size(23, 23);
             this.tbutton.TabIndex = 1;
@@ -513,7 +552,7 @@
             this.vbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vbutton.ForeColor = System.Drawing.Color.Black;
-            this.vbutton.Location = new System.Drawing.Point(936, 367);
+            this.vbutton.Location = new System.Drawing.Point(648, 3);
             this.vbutton.Name = "vbutton";
             this.vbutton.Size = new System.Drawing.Size(23, 23);
             this.vbutton.TabIndex = 1;
@@ -531,7 +570,7 @@
             this.wbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wbutton.ForeColor = System.Drawing.Color.Black;
-            this.wbutton.Location = new System.Drawing.Point(965, 367);
+            this.wbutton.Location = new System.Drawing.Point(677, 3);
             this.wbutton.Name = "wbutton";
             this.wbutton.Size = new System.Drawing.Size(23, 23);
             this.wbutton.TabIndex = 1;
@@ -549,7 +588,7 @@
             this.xbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.xbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xbutton.ForeColor = System.Drawing.Color.Black;
-            this.xbutton.Location = new System.Drawing.Point(994, 367);
+            this.xbutton.Location = new System.Drawing.Point(706, 3);
             this.xbutton.Name = "xbutton";
             this.xbutton.Size = new System.Drawing.Size(23, 23);
             this.xbutton.TabIndex = 1;
@@ -567,7 +606,7 @@
             this.ybutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ybutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ybutton.ForeColor = System.Drawing.Color.Black;
-            this.ybutton.Location = new System.Drawing.Point(1023, 367);
+            this.ybutton.Location = new System.Drawing.Point(735, 3);
             this.ybutton.Name = "ybutton";
             this.ybutton.Size = new System.Drawing.Size(23, 23);
             this.ybutton.TabIndex = 1;
@@ -585,7 +624,7 @@
             this.ubutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ubutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ubutton.ForeColor = System.Drawing.Color.Black;
-            this.ubutton.Location = new System.Drawing.Point(907, 367);
+            this.ubutton.Location = new System.Drawing.Point(619, 3);
             this.ubutton.Name = "ubutton";
             this.ubutton.Size = new System.Drawing.Size(23, 23);
             this.ubutton.TabIndex = 1;
@@ -603,7 +642,7 @@
             this.zbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.zbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zbutton.ForeColor = System.Drawing.Color.Black;
-            this.zbutton.Location = new System.Drawing.Point(1052, 366);
+            this.zbutton.Location = new System.Drawing.Point(764, 3);
             this.zbutton.Name = "zbutton";
             this.zbutton.Size = new System.Drawing.Size(23, 23);
             this.zbutton.TabIndex = 1;
@@ -620,39 +659,39 @@
             this.possiblecombinationslist.BackColor = System.Drawing.Color.White;
             this.possiblecombinationslist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.possiblecombinationslist.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10,
-            this.columnHeader11,
-            this.columnHeader12,
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15,
-            this.columnHeader16,
-            this.columnHeader17,
-            this.columnHeader18,
-            this.columnHeader19,
-            this.columnHeader20,
-            this.columnHeader21,
-            this.columnHeader22,
-            this.columnHeader23,
-            this.columnHeader24,
-            this.columnHeader25,
-            this.columnHeader26,
-            this.columnHeader27});
+            this.numbercolumnheader,
+            this.acolumnheader,
+            this.bcolumnheader,
+            this.ccolumnheader,
+            this.dcolumnheader,
+            this.ecolumnheader,
+            this.fcolumnheader,
+            this.gcolumnheader,
+            this.hcolumnheader,
+            this.icolumnheader,
+            this.jcolumnheader,
+            this.kcolumnheader,
+            this.lcolumnheader,
+            this.mcolumnheader,
+            this.ncolumnheader,
+            this.ocolumnheader,
+            this.pcolumnheader,
+            this.qcolumnheader,
+            this.rcolumnheader,
+            this.scolumnheader,
+            this.tcolumnheader,
+            this.ucolumnheader,
+            this.vcolumnheader,
+            this.wcolumnheader,
+            this.xcolumnheader,
+            this.ycolumnheader,
+            this.zcolumnheader});
             this.possiblecombinationslist.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.possiblecombinationslist.ForeColor = System.Drawing.Color.Black;
             this.possiblecombinationslist.FullRowSelect = true;
             this.possiblecombinationslist.GridLines = true;
             this.possiblecombinationslist.HideSelection = false;
-            this.possiblecombinationslist.Location = new System.Drawing.Point(286, 12);
+            this.possiblecombinationslist.Location = new System.Drawing.Point(239, 12);
             this.possiblecombinationslist.Name = "possiblecombinationslist";
             this.possiblecombinationslist.Size = new System.Drawing.Size(810, 348);
             this.possiblecombinationslist.TabIndex = 4;
@@ -662,166 +701,166 @@
             this.possiblecombinationslist.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView1_ColumnWidthChanging);
             this.possiblecombinationslist.SelectedIndexChanged += new System.EventHandler(this.possiblecombinationslist_SelectedIndexChanged);
             // 
-            // columnHeader1
+            // numbercolumnheader
             // 
-            this.columnHeader1.Text = "No.";
-            this.columnHeader1.Width = 35;
+            this.numbercolumnheader.Text = "No.";
+            this.numbercolumnheader.Width = 35;
             // 
-            // columnHeader2
+            // acolumnheader
             // 
-            this.columnHeader2.Text = "a";
-            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 29;
+            this.acolumnheader.Text = "a";
+            this.acolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.acolumnheader.Width = 29;
             // 
-            // columnHeader3
+            // bcolumnheader
             // 
-            this.columnHeader3.Text = "b";
-            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader3.Width = 29;
+            this.bcolumnheader.Text = "b";
+            this.bcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.bcolumnheader.Width = 29;
             // 
-            // columnHeader4
+            // ccolumnheader
             // 
-            this.columnHeader4.Text = "c";
-            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader4.Width = 29;
+            this.ccolumnheader.Text = "c";
+            this.ccolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ccolumnheader.Width = 29;
             // 
-            // columnHeader5
+            // dcolumnheader
             // 
-            this.columnHeader5.Text = "d";
-            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader5.Width = 29;
+            this.dcolumnheader.Text = "d";
+            this.dcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dcolumnheader.Width = 29;
             // 
-            // columnHeader6
+            // ecolumnheader
             // 
-            this.columnHeader6.Text = "e";
-            this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader6.Width = 29;
+            this.ecolumnheader.Text = "e";
+            this.ecolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ecolumnheader.Width = 29;
             // 
-            // columnHeader7
+            // fcolumnheader
             // 
-            this.columnHeader7.Text = "f";
-            this.columnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader7.Width = 29;
+            this.fcolumnheader.Text = "f";
+            this.fcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.fcolumnheader.Width = 29;
             // 
-            // columnHeader8
+            // gcolumnheader
             // 
-            this.columnHeader8.Text = "g";
-            this.columnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader8.Width = 29;
+            this.gcolumnheader.Text = "g";
+            this.gcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gcolumnheader.Width = 29;
             // 
-            // columnHeader9
+            // hcolumnheader
             // 
-            this.columnHeader9.Text = "h";
-            this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader9.Width = 29;
+            this.hcolumnheader.Text = "h";
+            this.hcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.hcolumnheader.Width = 29;
             // 
-            // columnHeader10
+            // icolumnheader
             // 
-            this.columnHeader10.Text = "i";
-            this.columnHeader10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader10.Width = 29;
+            this.icolumnheader.Text = "i";
+            this.icolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.icolumnheader.Width = 29;
             // 
-            // columnHeader11
+            // jcolumnheader
             // 
-            this.columnHeader11.Text = "j";
-            this.columnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader11.Width = 29;
+            this.jcolumnheader.Text = "j";
+            this.jcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.jcolumnheader.Width = 29;
             // 
-            // columnHeader12
+            // kcolumnheader
             // 
-            this.columnHeader12.Text = "k";
-            this.columnHeader12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader12.Width = 29;
+            this.kcolumnheader.Text = "k";
+            this.kcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.kcolumnheader.Width = 29;
             // 
-            // columnHeader13
+            // lcolumnheader
             // 
-            this.columnHeader13.Text = "l";
-            this.columnHeader13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader13.Width = 29;
+            this.lcolumnheader.Text = "l";
+            this.lcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lcolumnheader.Width = 29;
             // 
-            // columnHeader14
+            // mcolumnheader
             // 
-            this.columnHeader14.Text = "m";
-            this.columnHeader14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader14.Width = 29;
+            this.mcolumnheader.Text = "m";
+            this.mcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mcolumnheader.Width = 29;
             // 
-            // columnHeader15
+            // ncolumnheader
             // 
-            this.columnHeader15.Text = "n";
-            this.columnHeader15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader15.Width = 29;
+            this.ncolumnheader.Text = "n";
+            this.ncolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ncolumnheader.Width = 29;
             // 
-            // columnHeader16
+            // ocolumnheader
             // 
-            this.columnHeader16.Text = "o";
-            this.columnHeader16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader16.Width = 29;
+            this.ocolumnheader.Text = "o";
+            this.ocolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ocolumnheader.Width = 29;
             // 
-            // columnHeader17
+            // pcolumnheader
             // 
-            this.columnHeader17.Text = "p";
-            this.columnHeader17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader17.Width = 29;
+            this.pcolumnheader.Text = "p";
+            this.pcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pcolumnheader.Width = 29;
             // 
-            // columnHeader18
+            // qcolumnheader
             // 
-            this.columnHeader18.Text = "q";
-            this.columnHeader18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader18.Width = 29;
+            this.qcolumnheader.Text = "q";
+            this.qcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.qcolumnheader.Width = 29;
             // 
-            // columnHeader19
+            // rcolumnheader
             // 
-            this.columnHeader19.Text = "r";
-            this.columnHeader19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader19.Width = 29;
+            this.rcolumnheader.Text = "r";
+            this.rcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rcolumnheader.Width = 29;
             // 
-            // columnHeader20
+            // scolumnheader
             // 
-            this.columnHeader20.Text = "s";
-            this.columnHeader20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader20.Width = 29;
+            this.scolumnheader.Text = "s";
+            this.scolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.scolumnheader.Width = 29;
             // 
-            // columnHeader21
+            // tcolumnheader
             // 
-            this.columnHeader21.Text = "t";
-            this.columnHeader21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader21.Width = 29;
+            this.tcolumnheader.Text = "t";
+            this.tcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tcolumnheader.Width = 29;
             // 
-            // columnHeader22
+            // ucolumnheader
             // 
-            this.columnHeader22.Text = "u";
-            this.columnHeader22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader22.Width = 29;
+            this.ucolumnheader.Text = "u";
+            this.ucolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ucolumnheader.Width = 29;
             // 
-            // columnHeader23
+            // vcolumnheader
             // 
-            this.columnHeader23.Text = "v";
-            this.columnHeader23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader23.Width = 29;
+            this.vcolumnheader.Text = "v";
+            this.vcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.vcolumnheader.Width = 29;
             // 
-            // columnHeader24
+            // wcolumnheader
             // 
-            this.columnHeader24.Text = "w";
-            this.columnHeader24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader24.Width = 29;
+            this.wcolumnheader.Text = "w";
+            this.wcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.wcolumnheader.Width = 29;
             // 
-            // columnHeader25
+            // xcolumnheader
             // 
-            this.columnHeader25.Text = "x";
-            this.columnHeader25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader25.Width = 29;
+            this.xcolumnheader.Text = "x";
+            this.xcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.xcolumnheader.Width = 29;
             // 
-            // columnHeader26
+            // ycolumnheader
             // 
-            this.columnHeader26.Text = "y";
-            this.columnHeader26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader26.Width = 29;
+            this.ycolumnheader.Text = "y";
+            this.ycolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ycolumnheader.Width = 29;
             // 
-            // columnHeader27
+            // zcolumnheader
             // 
-            this.columnHeader27.Text = "z";
-            this.columnHeader27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader27.Width = 29;
+            this.zcolumnheader.Text = "z";
+            this.zcolumnheader.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.zcolumnheader.Width = 29;
             // 
             // updatelistcheckbox
             // 
@@ -831,15 +870,14 @@
             this.updatelistcheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.updatelistcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updatelistcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updatelistcheckbox.Location = new System.Drawing.Point(125, 366);
+            this.updatelistcheckbox.Location = new System.Drawing.Point(238, 424);
             this.updatelistcheckbox.Name = "updatelistcheckbox";
             this.updatelistcheckbox.Size = new System.Drawing.Size(155, 23);
             this.updatelistcheckbox.TabIndex = 5;
             this.updatelistcheckbox.TabStop = false;
             this.updatelistcheckbox.Text = "Update List and Buttons";
-            this.jottotooltip.SetToolTip(this.updatelistcheckbox, "Determines whether or not the application should update the conditions listview a" +
-        "nd the buttons every time a new word is added. \r\nUncheck to maximize performance" +
-        ".");
+            this.jottotooltip.SetToolTip(this.updatelistcheckbox, "Determines whether the conditions list is\r\n updated every time a new word is adde" +
+        "d. \r\nUncheck to maximize performance.");
             this.updatelistcheckbox.UseVisualStyleBackColor = true;
             this.updatelistcheckbox.CheckedChanged += new System.EventHandler(this.updatelistcheckbox_CheckedChanged);
             // 
@@ -849,9 +887,9 @@
             this.totalbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.totalbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalbutton.ForeColor = System.Drawing.Color.Black;
-            this.totalbutton.Location = new System.Drawing.Point(286, 366);
+            this.totalbutton.Location = new System.Drawing.Point(3, 3);
             this.totalbutton.Name = "totalbutton";
-            this.totalbutton.Size = new System.Drawing.Size(35, 23);
+            this.totalbutton.Size = new System.Drawing.Size(30, 23);
             this.totalbutton.TabIndex = 1;
             this.totalbutton.TabStop = false;
             this.jottotooltip.SetToolTip(this.totalbutton, "Shows the number of selected conditions\r\nClick to select all conditions");
@@ -870,56 +908,510 @@
             // 
             // helpcheckbox
             // 
+            this.helpcheckbox.Appearance = System.Windows.Forms.Appearance.Button;
             this.helpcheckbox.AutoSize = true;
             this.helpcheckbox.Checked = true;
             this.helpcheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.helpcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.helpcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.helpcheckbox.Location = new System.Drawing.Point(1084, 372);
+            this.helpcheckbox.Location = new System.Drawing.Point(399, 424);
             this.helpcheckbox.Name = "helpcheckbox";
-            this.helpcheckbox.Size = new System.Drawing.Size(12, 11);
+            this.helpcheckbox.Size = new System.Drawing.Size(101, 23);
             this.helpcheckbox.TabIndex = 6;
             this.helpcheckbox.TabStop = false;
-            this.jottotooltip.SetToolTip(this.helpcheckbox, "Determines the avalibility of help information");
+            this.helpcheckbox.Text = "Show Help Info";
+            this.jottotooltip.SetToolTip(this.helpcheckbox, "Determines the availability of of help information");
             this.helpcheckbox.UseVisualStyleBackColor = true;
             this.helpcheckbox.CheckedChanged += new System.EventHandler(this.helpcheckbox_CheckedChanged);
+            // 
+            // labelspanel
+            // 
+            this.labelspanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelspanel.Controls.Add(this.alabel);
+            this.labelspanel.Controls.Add(this.blabel);
+            this.labelspanel.Controls.Add(this.clabel);
+            this.labelspanel.Controls.Add(this.dlabel);
+            this.labelspanel.Controls.Add(this.elabel);
+            this.labelspanel.Controls.Add(this.flabel);
+            this.labelspanel.Controls.Add(this.glabel);
+            this.labelspanel.Controls.Add(this.hlabel);
+            this.labelspanel.Controls.Add(this.ilabel);
+            this.labelspanel.Controls.Add(this.jlabel);
+            this.labelspanel.Controls.Add(this.klabel);
+            this.labelspanel.Controls.Add(this.llabel);
+            this.labelspanel.Controls.Add(this.mlabel);
+            this.labelspanel.Controls.Add(this.nlabel);
+            this.labelspanel.Controls.Add(this.olabel);
+            this.labelspanel.Controls.Add(this.plabel);
+            this.labelspanel.Controls.Add(this.qlabel);
+            this.labelspanel.Controls.Add(this.rlabel);
+            this.labelspanel.Controls.Add(this.slabel);
+            this.labelspanel.Controls.Add(this.tlabel);
+            this.labelspanel.Controls.Add(this.ulabel);
+            this.labelspanel.Controls.Add(this.vlabel);
+            this.labelspanel.Controls.Add(this.wlabel);
+            this.labelspanel.Controls.Add(this.xlabel);
+            this.labelspanel.Controls.Add(this.ylabel);
+            this.labelspanel.Controls.Add(this.zlabel);
+            this.labelspanel.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelspanel.Location = new System.Drawing.Point(238, 402);
+            this.labelspanel.Name = "labelspanel";
+            this.labelspanel.Size = new System.Drawing.Size(811, 16);
+            this.labelspanel.TabIndex = 12;
+            this.jottotooltip.SetToolTip(this.labelspanel, "Occurence rate for each letter can be seens here");
+            // 
+            // alabel
+            // 
+            this.alabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.alabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.alabel.Location = new System.Drawing.Point(39, 2);
+            this.alabel.Name = "alabel";
+            this.alabel.Size = new System.Drawing.Size(23, 9);
+            this.alabel.TabIndex = 24;
+            this.alabel.Text = "-";
+            this.alabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // blabel
+            // 
+            this.blabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.blabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.blabel.Location = new System.Drawing.Point(68, 2);
+            this.blabel.Name = "blabel";
+            this.blabel.Size = new System.Drawing.Size(23, 9);
+            this.blabel.TabIndex = 22;
+            this.blabel.Text = "-";
+            this.blabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // clabel
+            // 
+            this.clabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.clabel.Location = new System.Drawing.Point(97, 2);
+            this.clabel.Name = "clabel";
+            this.clabel.Size = new System.Drawing.Size(23, 9);
+            this.clabel.TabIndex = 20;
+            this.clabel.Text = "-";
+            this.clabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dlabel
+            // 
+            this.dlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.dlabel.Location = new System.Drawing.Point(124, 2);
+            this.dlabel.Name = "dlabel";
+            this.dlabel.Size = new System.Drawing.Size(23, 9);
+            this.dlabel.TabIndex = 18;
+            this.dlabel.Text = "-";
+            this.dlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // elabel
+            // 
+            this.elabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.elabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.elabel.Location = new System.Drawing.Point(155, 2);
+            this.elabel.Name = "elabel";
+            this.elabel.Size = new System.Drawing.Size(23, 9);
+            this.elabel.TabIndex = 16;
+            this.elabel.Text = "-";
+            this.elabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // flabel
+            // 
+            this.flabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.flabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.flabel.Location = new System.Drawing.Point(184, 2);
+            this.flabel.Name = "flabel";
+            this.flabel.Size = new System.Drawing.Size(23, 9);
+            this.flabel.TabIndex = 14;
+            this.flabel.Text = "-";
+            this.flabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // glabel
+            // 
+            this.glabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.glabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.glabel.Location = new System.Drawing.Point(211, 2);
+            this.glabel.Name = "glabel";
+            this.glabel.Size = new System.Drawing.Size(23, 9);
+            this.glabel.TabIndex = 12;
+            this.glabel.Text = "-";
+            this.glabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // hlabel
+            // 
+            this.hlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.hlabel.Location = new System.Drawing.Point(240, 2);
+            this.hlabel.Name = "hlabel";
+            this.hlabel.Size = new System.Drawing.Size(23, 9);
+            this.hlabel.TabIndex = 34;
+            this.hlabel.Text = "-";
+            this.hlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ilabel
+            // 
+            this.ilabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ilabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.ilabel.Location = new System.Drawing.Point(269, 2);
+            this.ilabel.Name = "ilabel";
+            this.ilabel.Size = new System.Drawing.Size(23, 9);
+            this.ilabel.TabIndex = 35;
+            this.ilabel.Text = "-";
+            this.ilabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // jlabel
+            // 
+            this.jlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.jlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.jlabel.Location = new System.Drawing.Point(300, 2);
+            this.jlabel.Name = "jlabel";
+            this.jlabel.Size = new System.Drawing.Size(23, 9);
+            this.jlabel.TabIndex = 11;
+            this.jlabel.Text = "-";
+            this.jlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // klabel
+            // 
+            this.klabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.klabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.klabel.Location = new System.Drawing.Point(329, 2);
+            this.klabel.Name = "klabel";
+            this.klabel.Size = new System.Drawing.Size(23, 9);
+            this.klabel.TabIndex = 13;
+            this.klabel.Text = "-";
+            this.klabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // llabel
+            // 
+            this.llabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.llabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.llabel.Location = new System.Drawing.Point(358, 2);
+            this.llabel.Name = "llabel";
+            this.llabel.Size = new System.Drawing.Size(23, 9);
+            this.llabel.TabIndex = 15;
+            this.llabel.Text = "-";
+            this.llabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // mlabel
+            // 
+            this.mlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.mlabel.Location = new System.Drawing.Point(387, 2);
+            this.mlabel.Name = "mlabel";
+            this.mlabel.Size = new System.Drawing.Size(23, 9);
+            this.mlabel.TabIndex = 17;
+            this.mlabel.Text = "-";
+            this.mlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // nlabel
+            // 
+            this.nlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.nlabel.Location = new System.Drawing.Point(416, 2);
+            this.nlabel.Name = "nlabel";
+            this.nlabel.Size = new System.Drawing.Size(23, 9);
+            this.nlabel.TabIndex = 19;
+            this.nlabel.Text = "-";
+            this.nlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // olabel
+            // 
+            this.olabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.olabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.olabel.Location = new System.Drawing.Point(445, 2);
+            this.olabel.Name = "olabel";
+            this.olabel.Size = new System.Drawing.Size(23, 9);
+            this.olabel.TabIndex = 21;
+            this.olabel.Text = "-";
+            this.olabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // plabel
+            // 
+            this.plabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.plabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.plabel.Location = new System.Drawing.Point(474, 2);
+            this.plabel.Name = "plabel";
+            this.plabel.Size = new System.Drawing.Size(23, 9);
+            this.plabel.TabIndex = 23;
+            this.plabel.Text = "-";
+            this.plabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // qlabel
+            // 
+            this.qlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.qlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.qlabel.Location = new System.Drawing.Point(501, 2);
+            this.qlabel.Name = "qlabel";
+            this.qlabel.Size = new System.Drawing.Size(23, 9);
+            this.qlabel.TabIndex = 25;
+            this.qlabel.Text = "-";
+            this.qlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // rlabel
+            // 
+            this.rlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.rlabel.Location = new System.Drawing.Point(532, 2);
+            this.rlabel.Name = "rlabel";
+            this.rlabel.Size = new System.Drawing.Size(23, 9);
+            this.rlabel.TabIndex = 26;
+            this.rlabel.Text = "-";
+            this.rlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // slabel
+            // 
+            this.slabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.slabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.slabel.Location = new System.Drawing.Point(561, 2);
+            this.slabel.Name = "slabel";
+            this.slabel.Size = new System.Drawing.Size(23, 9);
+            this.slabel.TabIndex = 27;
+            this.slabel.Text = "-";
+            this.slabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // tlabel
+            // 
+            this.tlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.tlabel.Location = new System.Drawing.Point(590, 2);
+            this.tlabel.Name = "tlabel";
+            this.tlabel.Size = new System.Drawing.Size(23, 9);
+            this.tlabel.TabIndex = 28;
+            this.tlabel.Text = "-";
+            this.tlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ulabel
+            // 
+            this.ulabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ulabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.ulabel.Location = new System.Drawing.Point(619, 2);
+            this.ulabel.Name = "ulabel";
+            this.ulabel.Size = new System.Drawing.Size(23, 9);
+            this.ulabel.TabIndex = 29;
+            this.ulabel.Text = "-";
+            this.ulabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // vlabel
+            // 
+            this.vlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.vlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.vlabel.Location = new System.Drawing.Point(648, 2);
+            this.vlabel.Name = "vlabel";
+            this.vlabel.Size = new System.Drawing.Size(23, 9);
+            this.vlabel.TabIndex = 30;
+            this.vlabel.Text = "-";
+            this.vlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // wlabel
+            // 
+            this.wlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.wlabel.Location = new System.Drawing.Point(677, 2);
+            this.wlabel.Name = "wlabel";
+            this.wlabel.Size = new System.Drawing.Size(23, 9);
+            this.wlabel.TabIndex = 31;
+            this.wlabel.Text = "-";
+            this.wlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // xlabel
+            // 
+            this.xlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.xlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.xlabel.Location = new System.Drawing.Point(706, 2);
+            this.xlabel.Name = "xlabel";
+            this.xlabel.Size = new System.Drawing.Size(23, 9);
+            this.xlabel.TabIndex = 32;
+            this.xlabel.Text = "-";
+            this.xlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ylabel
+            // 
+            this.ylabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ylabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.ylabel.Location = new System.Drawing.Point(735, 2);
+            this.ylabel.Name = "ylabel";
+            this.ylabel.Size = new System.Drawing.Size(23, 9);
+            this.ylabel.TabIndex = 33;
+            this.ylabel.Text = "-";
+            this.ylabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // zlabel
+            // 
+            this.zlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.zlabel.Font = new System.Drawing.Font("Consolas", 6F, System.Drawing.FontStyle.Bold);
+            this.zlabel.Location = new System.Drawing.Point(764, 2);
+            this.zlabel.Name = "zlabel";
+            this.zlabel.Size = new System.Drawing.Size(23, 9);
+            this.zlabel.TabIndex = 10;
+            this.zlabel.Text = "-";
+            this.zlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // minuniqueletterscountcheckbox
+            // 
+            this.minuniqueletterscountcheckbox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.minuniqueletterscountcheckbox.AutoSize = true;
+            this.minuniqueletterscountcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minuniqueletterscountcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minuniqueletterscountcheckbox.Location = new System.Drawing.Point(951, 424);
+            this.minuniqueletterscountcheckbox.Name = "minuniqueletterscountcheckbox";
+            this.minuniqueletterscountcheckbox.Size = new System.Drawing.Size(59, 23);
+            this.minuniqueletterscountcheckbox.TabIndex = 13;
+            this.minuniqueletterscountcheckbox.TabStop = false;
+            this.minuniqueletterscountcheckbox.Text = "Set Min";
+            this.jottotooltip.SetToolTip(this.minuniqueletterscountcheckbox, "Determines the availability of specifying a minimum number of unique letters");
+            this.minuniqueletterscountcheckbox.UseVisualStyleBackColor = true;
+            this.minuniqueletterscountcheckbox.CheckedChanged += new System.EventHandler(this.minuniqueletterscountcheckbox_CheckedChanged);
+            // 
+            // minuniqueletterscountnumericupdown
+            // 
+            this.minuniqueletterscountnumericupdown.BackColor = System.Drawing.Color.White;
+            this.minuniqueletterscountnumericupdown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.minuniqueletterscountnumericupdown.Enabled = false;
+            this.minuniqueletterscountnumericupdown.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.minuniqueletterscountnumericupdown.Location = new System.Drawing.Point(1016, 424);
+            this.minuniqueletterscountnumericupdown.Maximum = new decimal(new int[] {
+            26,
+            0,
+            0,
+            0});
+            this.minuniqueletterscountnumericupdown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.minuniqueletterscountnumericupdown.Name = "minuniqueletterscountnumericupdown";
+            this.minuniqueletterscountnumericupdown.Size = new System.Drawing.Size(34, 23);
+            this.minuniqueletterscountnumericupdown.TabIndex = 14;
+            this.jottotooltip.SetToolTip(this.minuniqueletterscountnumericupdown, "Maximum length");
+            this.minuniqueletterscountnumericupdown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.minuniqueletterscountnumericupdown.ValueChanged += new System.EventHandler(this.minmaxuniqueletterscountnumericupdown_ValueChanged);
+            // 
+            // maxuniqueletterscountcheckbox
+            // 
+            this.maxuniqueletterscountcheckbox.Appearance = System.Windows.Forms.Appearance.Button;
+            this.maxuniqueletterscountcheckbox.AutoSize = true;
+            this.maxuniqueletterscountcheckbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maxuniqueletterscountcheckbox.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxuniqueletterscountcheckbox.Location = new System.Drawing.Point(846, 423);
+            this.maxuniqueletterscountcheckbox.Name = "maxuniqueletterscountcheckbox";
+            this.maxuniqueletterscountcheckbox.Size = new System.Drawing.Size(59, 23);
+            this.maxuniqueletterscountcheckbox.TabIndex = 13;
+            this.maxuniqueletterscountcheckbox.TabStop = false;
+            this.maxuniqueletterscountcheckbox.Text = "Set Max";
+            this.jottotooltip.SetToolTip(this.maxuniqueletterscountcheckbox, "Determines the availability of specifying a maximum number of unique letters");
+            this.maxuniqueletterscountcheckbox.UseVisualStyleBackColor = true;
+            this.maxuniqueletterscountcheckbox.CheckedChanged += new System.EventHandler(this.maxuniqueletterscountcheckbox_CheckedChanged);
+            // 
+            // maxuniqueletterscountnumericupdown
+            // 
+            this.maxuniqueletterscountnumericupdown.BackColor = System.Drawing.Color.White;
+            this.maxuniqueletterscountnumericupdown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maxuniqueletterscountnumericupdown.Enabled = false;
+            this.maxuniqueletterscountnumericupdown.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.maxuniqueletterscountnumericupdown.Location = new System.Drawing.Point(911, 424);
+            this.maxuniqueletterscountnumericupdown.Maximum = new decimal(new int[] {
+            26,
+            0,
+            0,
+            0});
+            this.maxuniqueletterscountnumericupdown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.maxuniqueletterscountnumericupdown.Name = "maxuniqueletterscountnumericupdown";
+            this.maxuniqueletterscountnumericupdown.Size = new System.Drawing.Size(34, 23);
+            this.maxuniqueletterscountnumericupdown.TabIndex = 14;
+            this.jottotooltip.SetToolTip(this.maxuniqueletterscountnumericupdown, "Minimum length");
+            this.maxuniqueletterscountnumericupdown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.maxuniqueletterscountnumericupdown.ValueChanged += new System.EventHandler(this.minmaxuniqueletterscountnumericupdown_ValueChanged);
+            // 
+            // showpossiblewordsbutton
+            // 
+            this.showpossiblewordsbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showpossiblewordsbutton.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showpossiblewordsbutton.Location = new System.Drawing.Point(506, 424);
+            this.showpossiblewordsbutton.Name = "showpossiblewordsbutton";
+            this.showpossiblewordsbutton.Size = new System.Drawing.Size(152, 23);
+            this.showpossiblewordsbutton.TabIndex = 1;
+            this.showpossiblewordsbutton.TabStop = false;
+            this.showpossiblewordsbutton.Text = "Show Possible Words";
+            this.jottotooltip.SetToolTip(this.showpossiblewordsbutton, "Shows a list of possible words");
+            this.showpossiblewordsbutton.UseVisualStyleBackColor = true;
+            this.showpossiblewordsbutton.Click += new System.EventHandler(this.showpossiblewordsbutton_Click);
+            // 
+            // buttonspanel
+            // 
+            this.buttonspanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.buttonspanel.Controls.Add(this.abutton);
+            this.buttonspanel.Controls.Add(this.bbutton);
+            this.buttonspanel.Controls.Add(this.cbutton);
+            this.buttonspanel.Controls.Add(this.dbutton);
+            this.buttonspanel.Controls.Add(this.ebutton);
+            this.buttonspanel.Controls.Add(this.fbutton);
+            this.buttonspanel.Controls.Add(this.gbutton);
+            this.buttonspanel.Controls.Add(this.hbutton);
+            this.buttonspanel.Controls.Add(this.ibutton);
+            this.buttonspanel.Controls.Add(this.jbutton);
+            this.buttonspanel.Controls.Add(this.kbutton);
+            this.buttonspanel.Controls.Add(this.lbutton);
+            this.buttonspanel.Controls.Add(this.mbutton);
+            this.buttonspanel.Controls.Add(this.nbutton);
+            this.buttonspanel.Controls.Add(this.obutton);
+            this.buttonspanel.Controls.Add(this.pbutton);
+            this.buttonspanel.Controls.Add(this.qbutton);
+            this.buttonspanel.Controls.Add(this.rbutton);
+            this.buttonspanel.Controls.Add(this.sbutton);
+            this.buttonspanel.Controls.Add(this.tbutton);
+            this.buttonspanel.Controls.Add(this.ubutton);
+            this.buttonspanel.Controls.Add(this.vbutton);
+            this.buttonspanel.Controls.Add(this.wbutton);
+            this.buttonspanel.Controls.Add(this.xbutton);
+            this.buttonspanel.Controls.Add(this.ybutton);
+            this.buttonspanel.Controls.Add(this.zbutton);
+            this.buttonspanel.Controls.Add(this.totalbutton);
+            this.buttonspanel.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonspanel.Location = new System.Drawing.Point(238, 366);
+            this.buttonspanel.Name = "buttonspanel";
+            this.buttonspanel.Size = new System.Drawing.Size(811, 30);
+            this.buttonspanel.TabIndex = 7;
+            // 
+            // uniqueletternumberlabel
+            // 
+            this.uniqueletternumberlabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.uniqueletternumberlabel.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uniqueletternumberlabel.Location = new System.Drawing.Point(702, 423);
+            this.uniqueletternumberlabel.Name = "uniqueletternumberlabel";
+            this.uniqueletternumberlabel.Size = new System.Drawing.Size(138, 23);
+            this.uniqueletternumberlabel.TabIndex = 15;
+            this.uniqueletternumberlabel.Text = "Unique Letter Number:";
+            this.uniqueletternumberlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1108, 401);
+            this.ClientSize = new System.Drawing.Size(1061, 459);
+            this.Controls.Add(this.uniqueletternumberlabel);
+            this.Controls.Add(this.maxuniqueletterscountnumericupdown);
+            this.Controls.Add(this.minuniqueletterscountnumericupdown);
+            this.Controls.Add(this.maxuniqueletterscountcheckbox);
+            this.Controls.Add(this.minuniqueletterscountcheckbox);
+            this.Controls.Add(this.labelspanel);
+            this.Controls.Add(this.buttonspanel);
             this.Controls.Add(this.updatelistcheckbox);
             this.Controls.Add(this.possiblecombinationslist);
             this.Controls.Add(this.wordlist);
+            this.Controls.Add(this.showpossiblewordsbutton);
             this.Controls.Add(this.removebutton);
-            this.Controls.Add(this.abutton);
-            this.Controls.Add(this.bbutton);
-            this.Controls.Add(this.cbutton);
-            this.Controls.Add(this.dbutton);
-            this.Controls.Add(this.ebutton);
-            this.Controls.Add(this.fbutton);
-            this.Controls.Add(this.gbutton);
-            this.Controls.Add(this.hbutton);
-            this.Controls.Add(this.ibutton);
-            this.Controls.Add(this.jbutton);
-            this.Controls.Add(this.kbutton);
-            this.Controls.Add(this.lbutton);
-            this.Controls.Add(this.mbutton);
-            this.Controls.Add(this.nbutton);
-            this.Controls.Add(this.obutton);
-            this.Controls.Add(this.pbutton);
-            this.Controls.Add(this.qbutton);
-            this.Controls.Add(this.rbutton);
-            this.Controls.Add(this.sbutton);
-            this.Controls.Add(this.tbutton);
-            this.Controls.Add(this.ubutton);
-            this.Controls.Add(this.vbutton);
-            this.Controls.Add(this.wbutton);
-            this.Controls.Add(this.xbutton);
-            this.Controls.Add(this.ybutton);
-            this.Controls.Add(this.zbutton);
-            this.Controls.Add(this.totalbutton);
             this.Controls.Add(this.addbutton);
             this.Controls.Add(this.wordtext);
             this.Controls.Add(this.helpcheckbox);
@@ -931,6 +1423,10 @@
             this.Name = "mainForm";
             this.Text = "Jotto Aid Bot";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.mainForm_HelpButtonClicked);
+            this.labelspanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.minuniqueletterscountnumericupdown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxuniqueletterscountnumericupdown)).EndInit();
+            this.buttonspanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -969,37 +1465,71 @@
         private System.Windows.Forms.Button ubutton;
         private System.Windows.Forms.Button zbutton;
         private System.Windows.Forms.ListView possiblecombinationslist;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ColumnHeader columnHeader11;
-        private System.Windows.Forms.ColumnHeader columnHeader12;
-        private System.Windows.Forms.ColumnHeader columnHeader13;
-        private System.Windows.Forms.ColumnHeader columnHeader14;
-        private System.Windows.Forms.ColumnHeader columnHeader15;
-        private System.Windows.Forms.ColumnHeader columnHeader16;
-        private System.Windows.Forms.ColumnHeader columnHeader17;
-        private System.Windows.Forms.ColumnHeader columnHeader18;
-        private System.Windows.Forms.ColumnHeader columnHeader19;
-        private System.Windows.Forms.ColumnHeader columnHeader20;
-        private System.Windows.Forms.ColumnHeader columnHeader21;
-        private System.Windows.Forms.ColumnHeader columnHeader22;
-        private System.Windows.Forms.ColumnHeader columnHeader23;
-        private System.Windows.Forms.ColumnHeader columnHeader24;
-        private System.Windows.Forms.ColumnHeader columnHeader25;
-        private System.Windows.Forms.ColumnHeader columnHeader26;
-        private System.Windows.Forms.ColumnHeader columnHeader27;
+        private System.Windows.Forms.ColumnHeader numbercolumnheader;
+        private System.Windows.Forms.ColumnHeader acolumnheader;
+        private System.Windows.Forms.ColumnHeader bcolumnheader;
+        private System.Windows.Forms.ColumnHeader ccolumnheader;
+        private System.Windows.Forms.ColumnHeader dcolumnheader;
+        private System.Windows.Forms.ColumnHeader ecolumnheader;
+        private System.Windows.Forms.ColumnHeader fcolumnheader;
+        private System.Windows.Forms.ColumnHeader gcolumnheader;
+        private System.Windows.Forms.ColumnHeader hcolumnheader;
+        private System.Windows.Forms.ColumnHeader icolumnheader;
+        private System.Windows.Forms.ColumnHeader jcolumnheader;
+        private System.Windows.Forms.ColumnHeader kcolumnheader;
+        private System.Windows.Forms.ColumnHeader lcolumnheader;
+        private System.Windows.Forms.ColumnHeader mcolumnheader;
+        private System.Windows.Forms.ColumnHeader ncolumnheader;
+        private System.Windows.Forms.ColumnHeader ocolumnheader;
+        private System.Windows.Forms.ColumnHeader pcolumnheader;
+        private System.Windows.Forms.ColumnHeader qcolumnheader;
+        private System.Windows.Forms.ColumnHeader rcolumnheader;
+        private System.Windows.Forms.ColumnHeader scolumnheader;
+        private System.Windows.Forms.ColumnHeader tcolumnheader;
+        private System.Windows.Forms.ColumnHeader ucolumnheader;
+        private System.Windows.Forms.ColumnHeader vcolumnheader;
+        private System.Windows.Forms.ColumnHeader wcolumnheader;
+        private System.Windows.Forms.ColumnHeader xcolumnheader;
+        private System.Windows.Forms.ColumnHeader ycolumnheader;
+        private System.Windows.Forms.ColumnHeader zcolumnheader;
         private System.Windows.Forms.CheckBox updatelistcheckbox;
         private System.Windows.Forms.Button totalbutton;
         private System.Windows.Forms.ToolTip jottotooltip;
         private System.Windows.Forms.CheckBox helpcheckbox;
+        private System.Windows.Forms.Panel buttonspanel;
+        private System.Windows.Forms.Panel labelspanel;
+        private System.Windows.Forms.Label zlabel;
+        private System.Windows.Forms.Label alabel;
+        private System.Windows.Forms.Label ylabel;
+        private System.Windows.Forms.Label ilabel;
+        private System.Windows.Forms.Label xlabel;
+        private System.Windows.Forms.Label hlabel;
+        private System.Windows.Forms.Label wlabel;
+        private System.Windows.Forms.Label jlabel;
+        private System.Windows.Forms.Label vlabel;
+        private System.Windows.Forms.Label glabel;
+        private System.Windows.Forms.Label ulabel;
+        private System.Windows.Forms.Label klabel;
+        private System.Windows.Forms.Label tlabel;
+        private System.Windows.Forms.Label flabel;
+        private System.Windows.Forms.Label slabel;
+        private System.Windows.Forms.Label llabel;
+        private System.Windows.Forms.Label rlabel;
+        private System.Windows.Forms.Label elabel;
+        private System.Windows.Forms.Label qlabel;
+        private System.Windows.Forms.Label mlabel;
+        private System.Windows.Forms.Label dlabel;
+        private System.Windows.Forms.Label plabel;
+        private System.Windows.Forms.Label nlabel;
+        private System.Windows.Forms.Label blabel;
+        private System.Windows.Forms.Label clabel;
+        private System.Windows.Forms.Label olabel;
+        private System.Windows.Forms.Button showpossiblewordsbutton;
+        public System.Windows.Forms.NumericUpDown maxuniqueletterscountnumericupdown;
+        public System.Windows.Forms.NumericUpDown minuniqueletterscountnumericupdown;
+        public System.Windows.Forms.CheckBox maxuniqueletterscountcheckbox;
+        public System.Windows.Forms.CheckBox minuniqueletterscountcheckbox;
+        private System.Windows.Forms.Label uniqueletternumberlabel;
     }
 }
 

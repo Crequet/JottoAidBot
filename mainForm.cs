@@ -12,16 +12,30 @@ namespace JottoAidBot
 {
     public partial class mainForm : Form
     {
+        int[] letteroccurencerate;
+        char[] buttoncolorindicators;
         WordGuessCollection wgc;
+        public List<BooleanNode[]> filteredlist;
+        wordfinderForm wordfinderform;
 
         public mainForm()
         {
             InitializeComponent();
             wgc = new WordGuessCollection();
+            wordfinderform = new wordfinderForm();
+            wordfinderform.Owner = this;
             wgc.PossibleLayerCombinationsChanged += possiblecombinationslist_Update;
             wgc.PossibleLayerCombinationsChanged += atozbuttons_Update;
             possiblecombinationslist_Update(); atozbuttons_Update();
             
+        }
+
+        public List<BooleanNode[]> FilteredList
+        {
+            get
+            {
+                return filteredlist;
+            }
         }
 
         private void mainForm_HelpButtonClicked(object sender, CancelEventArgs e)
@@ -65,7 +79,6 @@ namespace JottoAidBot
             wordlist.Items.Add(word + ", " + num);
             wgc.Add(new WordGuess(word, num));
             wgc.Run();
-            
         }
 
         private void removebutton_Click(object sender, EventArgs e)
@@ -84,57 +97,97 @@ namespace JottoAidBot
             wordlist.EndUpdate();
             wgc.Run();
         }
-
+        
         private void possiblecombinationslist_Update()
         {
             if (!updatelistcheckbox.Checked) return;
-            possiblecombinationslist.BeginUpdate();
             SuspendLayout(); possiblecombinationslist.SuspendLayout();
+            possiblecombinationslist.BeginUpdate();
             possiblecombinationslist.Items.Clear();
-            for (int i =0; i < wgc.PossibleLayerCombinations.Count; i++)
+            filteredlist = new List<BooleanNode[]>();
+
+            if (minuniqueletterscountcheckbox.Checked || maxuniqueletterscountcheckbox.Checked)
             {
-                possiblecombinationslist.Items.Add(i.ToString());
-                for (int j = 0; j < wgc.PossibleLayerCombinations[i].Length; j++)
+                for (int i = 0; i < wgc.PossibleLayerCombinations.Count; i++)
                 {
-                   possiblecombinationslist.Items[i].SubItems.Add(wgc.PossibleLayerCombinations[i][j].ToString());
+                    if (minuniqueletterscountcheckbox.Checked && wgc.PossibleLayerCombinations[i].NotFalseCount() < minuniqueletterscountnumericupdown.Value) continue;
+                    if (maxuniqueletterscountcheckbox.Checked && wgc.PossibleLayerCombinations[i].TrueCount() > maxuniqueletterscountnumericupdown.Value) continue;
+                    //if (maxuniqueletterscountcheckbox.Checked && wgc.PossibleLayerCombinations[i].NotTrueCount() < 26 - maxuniqueletterscountnumericupdown.Value) continue;
+                    filteredlist.Add(wgc.PossibleLayerCombinations[i]);
                 }
             }
-            ResumeLayout(); possiblecombinationslist.ResumeLayout();
+            else
+            {
+                for (int i = 0; i < wgc.PossibleLayerCombinations.Count; i++)
+                {
+                    filteredlist.Add(wgc.PossibleLayerCombinations[i]);
+                }
+            }
+
+            if (filteredlist.Count <= 0)
+            {
+                List<BooleanNode[]> defaultvalue = new List<BooleanNode[]>();
+                defaultvalue.Add(new BooleanNode[26]);
+                filteredlist = defaultvalue;
+            }
+
+            for (int i = 0; i < filteredlist.Count; i++)
+            {
+                possiblecombinationslist.Items.Add(i.ToString());
+                for (int j = 0; j < filteredlist[i].Length; j++)
+                {
+                    possiblecombinationslist.Items[i].SubItems.Add(filteredlist[i][j].ToString());
+                }
+            }
+
             possiblecombinationslist.EndUpdate();
+            possiblecombinationslist.ResumeLayout(); ResumeLayout(); 
+
+            if (wordfinderform.formisvisible) wordfinderform.possiblewordlist_Update();
         }
 
         private void atozbuttons_Update()
         {
             if (!updatelistcheckbox.Checked) return;
-            char[] buttoncolorindicators = new char[26];
+            buttoncolorindicators = new char[26];
+            letteroccurencerate = new int[26];
             for (int i = 0; i < 26; i++)
             {
-                buttoncolorindicators[i] = wgc.PossibleLayerCombinations[0][i].Value;
-                for (int j = 1; j < wgc.PossibleLayerCombinations.Count; j++)
+                buttoncolorindicators[i] = possiblecombinationslist.Items[0].SubItems[i + 1].Text[0];
+                letteroccurencerate[i] = possiblecombinationslist.Items[0].SubItems[i + 1].Text[0] == 'T' ? 1 : 0;
+                for (int j = 1; j < possiblecombinationslist.Items.Count; j++)
                 {
-                    if (buttoncolorindicators[i] == '?') break;
-                    buttoncolorindicators[i] = LayerOperation.MergeNodes(buttoncolorindicators[i], wgc.PossibleLayerCombinations[j][i]);
+                    if (buttoncolorindicators[i] == '?')
+                    {
+                        break;
+                    }
+                    buttoncolorindicators[i] = LayerOperation.MergeNodes(buttoncolorindicators[i], possiblecombinationslist.Items[j].SubItems[i + 1].Text[0]);
+                    if (possiblecombinationslist.Items[j].SubItems[i + 1].Text[0] == 'T') letteroccurencerate[i]++;
                 }
 
                 if (buttoncolorindicators[i] == '?')
                 {
-                    Controls[i + 4].BackColor = Color.FromKnownColor(KnownColor.Control);
-                    Controls[i + 4].Enabled = false;
+                    buttonspanel.Controls[i].BackColor = Color.FromKnownColor(KnownColor.Control);
+                    buttonspanel.Controls[i].Enabled = false;
+                    labelspanel.Controls[i].Text = "-";
                 }
                 else if (buttoncolorindicators[i] == 'T')
                 {
-                    Controls[i + 4].BackColor = Color.FromKnownColor(KnownColor.PaleGreen);
-                    Controls[i + 4].Enabled = true;
+                    buttonspanel.Controls[i].BackColor = Color.FromKnownColor(KnownColor.PaleGreen);
+                    buttonspanel.Controls[i].Enabled = true;
+                    labelspanel.Controls[i].Text = "1";
                 }
                 else if (buttoncolorindicators[i] == 'F')
                 {
-                    Controls[i + 4].BackColor = Color.FromKnownColor(KnownColor.LightPink);
-                    Controls[i + 4].Enabled = true;
+                    buttonspanel.Controls[i].BackColor = Color.FromKnownColor(KnownColor.LightPink);
+                    buttonspanel.Controls[i].Enabled = true;
+                    labelspanel.Controls[i].Text = "0";
                 }
                 else if (buttoncolorindicators[i] == 'C')
                 {
-                    Controls[i + 4].BackColor = Color.FromKnownColor(KnownColor.PaleTurquoise);
-                    Controls[i + 4].Enabled = true;
+                    buttonspanel.Controls[i].BackColor = Color.FromKnownColor(KnownColor.PaleTurquoise);
+                    buttonspanel.Controls[i].Enabled = true;
+                    labelspanel.Controls[i].Text = Math.Round(((decimal)letteroccurencerate[i] / possiblecombinationslist.Items.Count),3).ToString();
                 }
             }
             if (updatelistcheckbox.Checked) totalbutton.Text = "";
@@ -149,9 +202,9 @@ namespace JottoAidBot
             possiblecombinationslist.BeginUpdate();
             possiblecombinationslist.Select();
             int buttonnumber = ((Control)sender).Name[0] - 97;
-            for ( int i = 0; i < wgc.PossibleLayerCombinations.Count; i++)
+            for ( int i = 0; i < possiblecombinationslist.Items.Count; i++)
             {
-                if (wgc.PossibleLayerCombinations[i][buttonnumber].Value == 'T')
+                if (possiblecombinationslist.Items[i].SubItems[buttonnumber+1].Text == "T")
                 {
                     possiblecombinationslist.Items[i].Selected = true;
                     totalcount++;
@@ -172,13 +225,13 @@ namespace JottoAidBot
             possiblecombinationslist.SelectedIndexChanged -= new System.EventHandler(this.possiblecombinationslist_SelectedIndexChanged);
             possiblecombinationslist.BeginUpdate();
             possiblecombinationslist.Select();
-            for (int i = 0; i < wgc.PossibleLayerCombinations.Count; i++)
+            for (int i = 0; i < possiblecombinationslist.Items.Count; i++)
             {
                 possiblecombinationslist.Items[i].Selected = true;
             }
             possiblecombinationslist.EndUpdate();
             possiblecombinationslist.SelectedIndexChanged += new System.EventHandler(this.possiblecombinationslist_SelectedIndexChanged);
-            totalbutton.Text = wgc.PossibleLayerCombinations.Count > 0 ? wgc.PossibleLayerCombinations.Count.ToString() : "";
+            totalbutton.Text = possiblecombinationslist.Items.Count > 0 ? possiblecombinationslist.Items.Count.ToString() : "";
         }
 
         private void updatelistcheckbox_CheckedChanged(object sender, EventArgs e)
@@ -199,5 +252,30 @@ namespace JottoAidBot
             jottotooltip.Active = helpcheckbox.Checked;
             HelpButton = helpcheckbox.Checked;
         }
+
+        private void minmaxuniqueletterscountnumericupdown_ValueChanged(object sender, EventArgs e)
+        {
+            possiblecombinationslist_Update(); atozbuttons_Update();
+        }
+
+        private void minuniqueletterscountcheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            minuniqueletterscountnumericupdown.Enabled = minuniqueletterscountcheckbox.Checked;
+            possiblecombinationslist_Update(); atozbuttons_Update();
+        }
+
+        private void maxuniqueletterscountcheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            maxuniqueletterscountnumericupdown.Enabled = maxuniqueletterscountcheckbox.Checked;
+            possiblecombinationslist_Update(); atozbuttons_Update();
+        }
+
+        private void showpossiblewordsbutton_Click(object sender, EventArgs e)
+        {
+            wordfinderform.formisvisible = true;
+            wordfinderform.possiblewordlist_Update();
+            wordfinderform.Show();
+        }
+        
     }
 }

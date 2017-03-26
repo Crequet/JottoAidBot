@@ -7,3 +7,4 @@ D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Release\JottoAidBot.csp
 D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Release\JottoAidBot.exe
 D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Release\JottoAidBot.pdb
 D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Release\JottoAidBot.csprojResolveAssemblyReference.cache
+D:\DATA\Programming\Projects\JottoAidBot\JottoAidBot\obj\Release\JottoAidBot.wordfinderForm.resources

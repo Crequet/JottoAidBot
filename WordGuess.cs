@@ -130,6 +130,55 @@ namespace JottoAidBot
 
     public static class LayerOperation
     {
+        public static int TrueCount(this BooleanNode[] layer)
+        {
+            int count = 0;
+            for (int i = 0; i < layer.Length; i++)
+            {
+                if (layer[i].Value == 'T')
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static int TrueCount(this bool[] layer)
+        {
+            int count = 0;
+            for (int i = 0; i < layer.Length; i++)
+            {
+                if (layer[i] == true)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static int NotTrueCount(this BooleanNode[] layer)
+        {
+            return layer.Length - layer.TrueCount();
+        }
+
+        public static int FalseCount(this BooleanNode[] layer)
+        {
+            int count = 0;
+            for (int i = 0; i < layer.Length; i++)
+            {
+                if (layer[i].Value == 'F')
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static int NotFalseCount(this BooleanNode[] layer)
+        {
+            return layer.Length - layer.FalseCount();
+        }
+
         public static bool[] GetLogicalView(string word)
         {
             bool[] logicalview = new bool[26];
@@ -201,9 +250,33 @@ namespace JottoAidBot
             return true;
         }
 
-        public static char MergeNodes(char node1Value, BooleanNode node2)
+        public static bool LayersMatch(BooleanNode[] layer1, bool[] layer2)
         {
-            return (node1Value == 'T' && node2.Value == 'T') ? 'T' : (node1Value == 'F' && node2.Value == 'F') ? 'F' : ((node1Value == 'C' && node2.Value == 'T') || (node1Value == 'C' && node2.Value == 'F') || (node1Value == 'T' && node2.Value == 'F') || (node1Value == 'F' && node2.Value == 'T')) ? 'C' : '?';
+            for (int i = 0; i < layer1.Length; i++)
+            {
+                if (!(layer1[i].Value == '?' || (layer1[i].Value == 'T' && layer2[i] == true) || (layer1[i].Value == 'F' && layer2[i] == false)))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool LayersMatch(bool[] layer1, bool[] layer2)
+        {
+            for (int i = 0; i < layer1.Length; i++)
+            {
+                if (layer1[i] && !layer2[i])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static char MergeNodes(char node1Value, char node2Value)
+        {
+            return (node1Value == 'T' && node2Value == 'T') ? 'T' : (node1Value == 'F' && node2Value == 'F') ? 'F' : ((node1Value == 'C' && node2Value == 'T') || (node1Value == 'C' && node2Value == 'F') || (node1Value == 'T' && node2Value == 'F') || (node1Value == 'F' && node2Value == 'T')) ? 'C' : '?';
         }
 
     }
@@ -266,16 +339,7 @@ namespace JottoAidBot
         {
             get
             {
-                if (possiblelayercombinations.Count == 0)
-                {
-                    List<BooleanNode[]> defaultvalue = new List<BooleanNode[]>();
-                    defaultvalue.Add(new BooleanNode[26]);
-                    return defaultvalue;
-                }
-                else
-                {
-                    return possiblelayercombinations;
-                }
+                return possiblelayercombinations;
             }
         }
 
